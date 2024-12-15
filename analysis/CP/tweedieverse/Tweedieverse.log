@@ -1,0 +1,811 @@
+2024-12-15 18:03:53.503133 INFO::Writing function arguments to log file
+2024-12-15 18:03:53.503987 DEBUG::Function arguments
+2024-12-15 18:03:53.50415 DEBUG::Output folder: analysis/CP/tweedieverse/
+2024-12-15 18:03:53.504293 DEBUG::Abundance threshold: 0.000000
+2024-12-15 18:03:53.50444 DEBUG::Prevalence threshold: 0.100000
+2024-12-15 18:03:53.50459 DEBUG::Variance threshold: 0.000000
+2024-12-15 18:03:53.504723 DEBUG::Base model: CPLM
+2024-12-15 18:03:53.504856 DEBUG::Link function: log
+2024-12-15 18:03:53.504989 DEBUG::Fixed effects: ResistanceType
+2024-12-15 18:03:53.505119 DEBUG::Random effects:
+2024-12-15 18:03:53.50525 DEBUG::ZSCP cutoff: 0.300000
+2024-12-15 18:03:53.505384 DEBUG::ZACP criteria: BIC
+2024-12-15 18:03:53.505504 DEBUG::Offset adjustment: TRUE
+2024-12-15 18:03:53.505626 DEBUG::Scale factor:
+2024-12-15 18:03:53.505751 DEBUG::Max significance: 0.050000
+2024-12-15 18:03:53.505871 DEBUG::Correction method: BH
+2024-12-15 18:03:53.506002 DEBUG::Standardize: TRUE
+2024-12-15 18:03:53.506119 DEBUG::Cores: 1
+2024-12-15 18:03:53.506249 DEBUG::Optimization routine: nlminb
+2024-12-15 18:03:53.506396 INFO::Determining format of input files
+2024-12-15 18:03:53.506961 INFO::Input format is data samples as columns and metadata samples as rows
+2024-12-15 18:03:54.026753 DEBUG::linked data so samples are rows
+2024-12-15 18:03:54.027285 DEBUG::The following samples were found to have metadata but no features. They will be removed. GSM1436500,GSM1436501,GSM1436502,GSM1436503,GSM1436504,GSM1436505,GSM1436506,GSM1436507,GSM1436508,GSM1436509,GSM1436510,GSM1436511,GSM1436512,GSM1436513,GSM1436514,GSM1436515,GSM1436516,GSM1436517,GSM1436518,GSM1436519,GSM1436524,GSM1436525,GSM1436526,GSM1436527,GSM1436528,GSM1436529,GSM1436530,GSM1436531,GSM1436532,GSM1436533,GSM1436534,GSM1436535,GSM1436536,GSM1436537,GSM1436538,GSM1436539
+2024-12-15 18:03:54.027517 DEBUG::A total of 6 samples were found in both the data and metadata
+2024-12-15 18:03:54.027681 DEBUG::Reordering data/metadata to use same sample ordering
+2024-12-15 18:03:54.030502 INFO::Filter data based on min abundance and min prevalence
+2024-12-15 18:03:54.031147 INFO::Total samples in data: 6
+2024-12-15 18:03:54.031597 INFO::Min samples required with min abundance for a feature not to be filtered: 0.600000
+2024-12-15 18:03:54.035844 INFO::Total filtered features with prevalence-abundance filtering: 0
+2024-12-15 18:03:54.036523 INFO::Filtered feature names:
+2024-12-15 18:03:54.043233 INFO::Total filtered features with variance filtering: 0
+2024-12-15 18:03:54.043768 INFO::Filtered feature names:
+2024-12-15 18:03:54.075746 INFO::Excluded metadata with entropy less or equal to 0:
+2024-12-15 18:03:54.076657 INFO::Formula for fixed effects: expr ~  ResistanceType
+2024-12-15 18:03:54.077259 INFO::Applying z-score to standardize continuous metadata
+2024-12-15 18:03:54.079863 INFO::Running selected analysis method: CPLM
+2024-12-15 18:03:54.081273 INFO::Fitting model to feature number 1, acnA
+2024-12-15 18:03:54.103478 INFO::Fitting model to feature number 2, acrA
+2024-12-15 18:03:54.127436 INFO::Fitting model to feature number 3, acrB
+2024-12-15 18:03:54.149336 INFO::Fitting model to feature number 4, acrR
+2024-12-15 18:03:54.173119 INFO::Fitting model to feature number 5, acs
+2024-12-15 18:03:54.187724 INFO::Fitting model to feature number 6, add
+2024-12-15 18:03:54.209796 INFO::Fitting model to feature number 7, adhE
+2024-12-15 18:03:54.237351 INFO::Fitting model to feature number 8, adhP
+2024-12-15 18:03:54.262719 INFO::Fitting model to feature number 9, adk
+2024-12-15 18:03:54.284357 INFO::Fitting model to feature number 10, agp
+2024-12-15 18:03:54.308417 INFO::Fitting model to feature number 11, aidB
+2024-12-15 18:03:54.330463 INFO::Fitting model to feature number 12, alaT
+2024-12-15 18:03:54.355471 INFO::Fitting model to feature number 13, alaU
+2024-12-15 18:03:54.369974 INFO::Fitting model to feature number 14, alaV
+2024-12-15 18:03:54.38599 INFO::Fitting model to feature number 15, alaW
+2024-12-15 18:03:54.40647 INFO::Fitting model to feature number 16, alaX
+2024-12-15 18:03:54.424961 INFO::Fitting model to feature number 17, aldA
+2024-12-15 18:03:54.437492 INFO::Fitting model to feature number 18, apt
+2024-12-15 18:03:54.453644 INFO::Fitting model to feature number 19, aqpZ
+2024-12-15 18:03:54.467301 INFO::Fitting model to feature number 20, argA
+2024-12-15 18:03:54.484204 INFO::Fitting model to feature number 21, argB
+2024-12-15 18:03:54.502752 INFO::Fitting model to feature number 22, argC
+2024-12-15 18:03:54.518921 INFO::Fitting model to feature number 23, argD
+2024-12-15 18:03:54.563673 INFO::Fitting model to feature number 24, argE
+2024-12-15 18:03:54.580993 INFO::Fitting model to feature number 25, argF
+2024-12-15 18:03:54.668999 INFO::Fitting model to feature number 26, argG
+2024-12-15 18:03:54.698476 INFO::Fitting model to feature number 27, argH
+2024-12-15 18:03:54.720357 INFO::Fitting model to feature number 28, argI
+2024-12-15 18:03:54.736154 INFO::Fitting model to feature number 29, argT
+2024-12-15 18:03:54.753065 INFO::Fitting model to feature number 30, argX
+2024-12-15 18:03:55.089508 INFO::Fitting model to feature number 31, aroL
+2024-12-15 18:03:55.113504 INFO::Fitting model to feature number 32, aroM
+2024-12-15 18:03:55.139562 INFO::Fitting model to feature number 33, artI
+2024-12-15 18:03:55.160726 INFO::Fitting model to feature number 34, artJ
+2024-12-15 18:03:55.186846 INFO::Fitting model to feature number 35, artP
+2024-12-15 18:03:55.208721 INFO::Fitting model to feature number 36, artQ
+2024-12-15 18:03:55.248312 INFO::Fitting model to feature number 37, atpC
+2024-12-15 18:03:55.267108 INFO::Fitting model to feature number 38, atpE
+2024-12-15 18:03:55.285435 INFO::Fitting model to feature number 39, atpI
+2024-12-15 18:03:55.302076 INFO::Fitting model to feature number 40, bacA
+2024-12-15 18:03:55.320504 INFO::Fitting model to feature number 41, bdm
+2024-12-15 18:03:55.336507 INFO::Fitting model to feature number 42, bglX
+2024-12-15 18:03:55.359062 INFO::Fitting model to feature number 43, blc
+2024-12-15 18:03:55.382113 INFO::Fitting model to feature number 44, bolA
+2024-12-15 18:03:55.40925 INFO::Fitting model to feature number 45, btuB
+2024-12-15 18:03:55.430031 INFO::Fitting model to feature number 46, carA
+2024-12-15 18:03:55.446404 INFO::Fitting model to feature number 47, carB
+2024-12-15 18:03:55.462758 INFO::Fitting model to feature number 48, cbl
+2024-12-15 18:03:55.489012 INFO::Fitting model to feature number 49, cdd
+2024-12-15 18:03:55.508759 INFO::Fitting model to feature number 50, chaB
+2024-12-15 18:03:55.526164 INFO::Fitting model to feature number 51, chaC
+2024-12-15 18:03:55.54586 INFO::Fitting model to feature number 52, clpB
+2024-12-15 18:03:55.563212 INFO::Fitting model to feature number 53, codA
+2024-12-15 18:03:55.580873 INFO::Fitting model to feature number 54, codB
+2024-12-15 18:03:55.597543 INFO::Fitting model to feature number 55, cpxP
+2024-12-15 18:03:55.618958 INFO::Fitting model to feature number 56, creB
+2024-12-15 18:03:55.677468 INFO::Fitting model to feature number 57, cspA
+2024-12-15 18:03:55.699984 INFO::Fitting model to feature number 58, cspG
+2024-12-15 18:03:55.724336 INFO::Fitting model to feature number 59, csrC
+2024-12-15 18:03:55.747262 INFO::Fitting model to feature number 60, cstA
+2024-12-15 18:03:55.944421 INFO::Fitting model to feature number 61, cydA
+2024-12-15 18:03:55.967329 INFO::Fitting model to feature number 62, cydB
+2024-12-15 18:03:55.990112 INFO::Fitting model to feature number 63, cyoA
+2024-12-15 18:03:56.009927 INFO::Fitting model to feature number 64, cysC
+2024-12-15 18:03:56.041485 INFO::Fitting model to feature number 65, cysT
+2024-12-15 18:03:56.0692 INFO::Fitting model to feature number 66, cysZ
+2024-12-15 18:03:56.096637 INFO::Fitting model to feature number 67, cytR
+2024-12-15 18:03:56.119215 INFO::Fitting model to feature number 68, dadA
+2024-12-15 18:03:56.140225 INFO::Fitting model to feature number 69, dadX
+2024-12-15 18:03:56.16076 INFO::Fitting model to feature number 70, dapD
+2024-12-15 18:03:56.204853 INFO::Fitting model to feature number 71, dcp
+2024-12-15 18:03:56.221943 INFO::Fitting model to feature number 72, dcrB
+2024-12-15 18:03:56.243187 INFO::Fitting model to feature number 73, dctA
+2024-12-15 18:03:56.255072 INFO::Fitting model to feature number 74, ddg
+2024-12-15 18:03:56.272904 INFO::Fitting model to feature number 75, dgsA
+2024-12-15 18:03:56.288677 INFO::Fitting model to feature number 76, dhaL
+2024-12-15 18:03:56.305763 INFO::Fitting model to feature number 77, dkgA
+2024-12-15 18:03:56.325745 INFO::Fitting model to feature number 78, dos
+2024-12-15 18:03:56.346754 INFO::Fitting model to feature number 79, dppA
+2024-12-15 18:03:56.36436 INFO::Fitting model to feature number 80, dppB
+2024-12-15 18:03:56.381489 INFO::Fitting model to feature number 81, dppC
+2024-12-15 18:03:56.402846 INFO::Fitting model to feature number 82, dppD
+2024-12-15 18:03:56.42981 INFO::Fitting model to feature number 83, dppF
+2024-12-15 18:03:56.448785 INFO::Fitting model to feature number 84, dps
+2024-12-15 18:03:56.469073 INFO::Fitting model to feature number 85, dsbA
+2024-12-15 18:03:56.49189 INFO::Fitting model to feature number 86, eamA
+2024-12-15 18:03:56.509437 INFO::Fitting model to feature number 87, ecnB
+2024-12-15 18:03:56.528011 INFO::Fitting model to feature number 88, edd
+2024-12-15 18:03:56.545643 INFO::Fitting model to feature number 89, elaB
+2024-12-15 18:03:56.565552 INFO::Fitting model to feature number 90, emrA
+2024-12-15 18:03:56.582308 INFO::Fitting model to feature number 91, envZ
+2024-12-15 18:03:56.602032 INFO::Fitting model to feature number 92, eptB
+2024-12-15 18:03:56.621227 INFO::Fitting model to feature number 93, evgA
+2024-12-15 18:03:56.697359 INFO::Fitting model to feature number 94, evgS
+2024-12-15 18:03:56.716208 INFO::Fitting model to feature number 95, exbD
+2024-12-15 18:03:56.737645 INFO::Fitting model to feature number 96, fbaB
+2024-12-15 18:03:56.763417 INFO::Fitting model to feature number 97, fbp
+2024-12-15 18:03:56.787856 INFO::Fitting model to feature number 98, fdoG
+2024-12-15 18:03:56.97459 INFO::Fitting model to feature number 99, fdoI
+2024-12-15 18:03:56.995301 INFO::Fitting model to feature number 100, feoA
+2024-12-15 18:03:57.020172 INFO::Fitting model to feature number 101, fhuF
+2024-12-15 18:03:57.040739 INFO::Fitting model to feature number 102, fic
+2024-12-15 18:03:57.063506 INFO::Fitting model to feature number 103, fkpA
+2024-12-15 18:03:57.106865 INFO::Fitting model to feature number 104, fldA
+2024-12-15 18:03:57.135594 INFO::Fitting model to feature number 105, fldB
+2024-12-15 18:03:57.156055 INFO::Fitting model to feature number 106, focA
+2024-12-15 18:03:57.174029 INFO::Fitting model to feature number 107, fpr
+2024-12-15 18:03:57.192162 INFO::Fitting model to feature number 108, fre
+2024-12-15 18:03:57.215928 INFO::Fitting model to feature number 109, frvX
+2024-12-15 18:03:57.232972 INFO::Fitting model to feature number 110, ftn
+2024-12-15 18:03:57.255545 INFO::Fitting model to feature number 111, fumA
+2024-12-15 18:03:57.270557 INFO::Fitting model to feature number 112, fumC
+2024-12-15 18:03:57.286298 INFO::Fitting model to feature number 113, fur
+2024-12-15 18:03:57.305567 INFO::Fitting model to feature number 114, fxsA
+2024-12-15 18:03:57.320482 INFO::Fitting model to feature number 115, gadA
+2024-12-15 18:03:57.337832 INFO::Fitting model to feature number 116, gadB
+2024-12-15 18:03:57.367369 INFO::Fitting model to feature number 117, gadC
+2024-12-15 18:03:57.386145 INFO::Fitting model to feature number 118, gadW
+2024-12-15 18:03:57.404095 INFO::Fitting model to feature number 119, gadX
+2024-12-15 18:03:57.425694 INFO::Fitting model to feature number 120, galE
+2024-12-15 18:03:57.446406 INFO::Fitting model to feature number 121, galK
+2024-12-15 18:03:57.467415 INFO::Fitting model to feature number 122, galP
+2024-12-15 18:03:57.48495 INFO::Fitting model to feature number 123, galT
+2024-12-15 18:03:57.514667 INFO::Fitting model to feature number 124, galU
+2024-12-15 18:03:57.532435 INFO::Fitting model to feature number 125, gapC_1
+2024-12-15 18:03:57.550224 INFO::Fitting model to feature number 126, gcd
+2024-12-15 18:03:57.568396 INFO::Fitting model to feature number 127, gcvP
+2024-12-15 18:03:57.60443 INFO::Fitting model to feature number 128, gcvT
+2024-12-15 18:03:57.637013 INFO::Fitting model to feature number 129, gdhA
+2024-12-15 18:03:57.702485 INFO::Fitting model to feature number 130, ggt
+2024-12-15 18:03:57.727623 INFO::Fitting model to feature number 131, glgB
+2024-12-15 18:03:57.761967 INFO::Fitting model to feature number 132, glgS
+2024-12-15 18:03:57.835 INFO::Fitting model to feature number 133, glgX
+2024-12-15 18:03:58.049347 INFO::Fitting model to feature number 134, glnA
+2024-12-15 18:03:58.072917 INFO::Fitting model to feature number 135, glnD
+2024-12-15 18:03:58.095228 INFO::Fitting model to feature number 136, glnG
+2024-12-15 18:03:58.117494 INFO::Fitting model to feature number 137, glnL
+2024-12-15 18:03:58.142658 INFO::Fitting model to feature number 138, glnP
+2024-12-15 18:03:58.163679 INFO::Fitting model to feature number 139, glnV
+2024-12-15 18:03:58.20741 INFO::Fitting model to feature number 140, glnX
+2024-12-15 18:03:58.250352 INFO::Fitting model to feature number 141, gloB
+2024-12-15 18:03:58.275465 INFO::Fitting model to feature number 142, glpA
+2024-12-15 18:03:58.295432 INFO::Fitting model to feature number 143, glpB
+2024-12-15 18:03:58.315648 INFO::Fitting model to feature number 144, glpC
+2024-12-15 18:03:58.334338 INFO::Fitting model to feature number 145, glpD
+2024-12-15 18:03:58.349569 INFO::Fitting model to feature number 146, glpF
+2024-12-15 18:03:58.367059 INFO::Fitting model to feature number 147, glpK
+2024-12-15 18:03:58.386114 INFO::Fitting model to feature number 148, glpQ
+2024-12-15 18:03:58.399802 INFO::Fitting model to feature number 149, glpT
+2024-12-15 18:03:58.416822 INFO::Fitting model to feature number 150, gltB
+2024-12-15 18:03:58.501805 INFO::Fitting model to feature number 151, gltF
+2024-12-15 18:03:58.733533 INFO::Fitting model to feature number 152, gltI
+2024-12-15 18:03:58.753827 INFO::Fitting model to feature number 153, gltJ
+2024-12-15 18:03:58.767601 INFO::Fitting model to feature number 154, gltK
+2024-12-15 18:03:58.782887 INFO::Fitting model to feature number 155, gltL
+2024-12-15 18:03:58.803724 INFO::Fitting model to feature number 156, glyT
+2024-12-15 18:03:58.842298 INFO::Fitting model to feature number 157, gnd
+2024-12-15 18:03:58.869587 INFO::Fitting model to feature number 158, gnsA
+2024-12-15 18:03:58.890797 INFO::Fitting model to feature number 159, gntT
+2024-12-15 18:03:58.955787 INFO::Fitting model to feature number 160, gntY
+2024-12-15 18:03:58.975978 INFO::Fitting model to feature number 161, grxB
+2024-12-15 18:03:58.996109 INFO::Fitting model to feature number 162, gshA
+2024-12-15 18:03:59.014696 INFO::Fitting model to feature number 163, gshB
+2024-12-15 18:03:59.042858 INFO::Fitting model to feature number 164, guaC
+2024-12-15 18:03:59.060889 INFO::Fitting model to feature number 165, hcaC
+2024-12-15 18:03:59.078331 INFO::Fitting model to feature number 166, hcaR
+2024-12-15 18:03:59.090761 INFO::Fitting model to feature number 167, hchA
+2024-12-15 18:03:59.11078 INFO::Fitting model to feature number 168, hdeA
+2024-12-15 18:03:59.13491 INFO::Fitting model to feature number 169, hdeB
+2024-12-15 18:03:59.156899 INFO::Fitting model to feature number 170, hdeD
+2024-12-15 18:03:59.179393 INFO::Fitting model to feature number 171, hdhA
+2024-12-15 18:03:59.20494 INFO::Fitting model to feature number 172, hemB
+2024-12-15 18:03:59.224824 INFO::Fitting model to feature number 173, hisA
+2024-12-15 18:03:59.262623 INFO::Fitting model to feature number 174, hisQ
+2024-12-15 18:03:59.291153 INFO::Fitting model to feature number 175, hokA
+2024-12-15 18:03:59.310903 INFO::Fitting model to feature number 176, hscB
+2024-12-15 18:03:59.325712 INFO::Fitting model to feature number 177, hsdR
+2024-12-15 18:03:59.358557 INFO::Fitting model to feature number 178, htpG
+2024-12-15 18:03:59.382518 INFO::Fitting model to feature number 179, hybA
+2024-12-15 18:03:59.396762 INFO::Fitting model to feature number 180, hybB
+2024-12-15 18:03:59.413587 INFO::Fitting model to feature number 181, hybO
+2024-12-15 18:03:59.429329 INFO::Fitting model to feature number 182, idi
+2024-12-15 18:03:59.493038 INFO::Fitting model to feature number 183, ileT
+2024-12-15 18:03:59.512384 INFO::Fitting model to feature number 184, ileU
+2024-12-15 18:03:59.52981 INFO::Fitting model to feature number 185, ileV
+2024-12-15 18:03:59.54686 INFO::Fitting model to feature number 186, ilvC
+2024-12-15 18:03:59.764286 INFO::Fitting model to feature number 187, ilvG
+2024-12-15 18:03:59.787933 INFO::Fitting model to feature number 188, ilvG_1
+2024-12-15 18:03:59.81209 INFO::Fitting model to feature number 189, ilvG_2
+2024-12-15 18:03:59.836448 INFO::Fitting model to feature number 190, ilvM
+2024-12-15 18:03:59.864443 INFO::Fitting model to feature number 191, inaA
+2024-12-15 18:03:59.889939 INFO::Fitting model to feature number 192, intB
+2024-12-15 18:03:59.908318 INFO::Fitting model to feature number 193, iscR
+2024-12-15 18:03:59.925181 INFO::Fitting model to feature number 194, ivy
+2024-12-15 18:03:59.944321 INFO::Fitting model to feature number 195, katE
+2024-12-15 18:03:59.964923 INFO::Fitting model to feature number 196, katG
+2024-12-15 18:04:00.004962 INFO::Fitting model to feature number 197, kdgT
+2024-12-15 18:04:00.024103 INFO::Fitting model to feature number 198, kdtA
+2024-12-15 18:04:00.038638 INFO::Fitting model to feature number 199, kgtP
+2024-12-15 18:04:00.054893 INFO::Fitting model to feature number 200, lamB
+2024-12-15 18:04:00.068146 INFO::Fitting model to feature number 201, ldcC
+2024-12-15 18:04:00.089066 INFO::Fitting model to feature number 202, leuA
+2024-12-15 18:04:00.116012 INFO::Fitting model to feature number 203, leuB
+2024-12-15 18:04:00.155513 INFO::Fitting model to feature number 204, leuC
+2024-12-15 18:04:00.186968 INFO::Fitting model to feature number 205, leuD
+2024-12-15 18:04:00.208734 INFO::Fitting model to feature number 206, leuW
+2024-12-15 18:04:00.228914 INFO::Fitting model to feature number 207, ligA
+2024-12-15 18:04:00.245109 INFO::Fitting model to feature number 208, lipA
+2024-12-15 18:04:00.262487 INFO::Fitting model to feature number 209, livF
+2024-12-15 18:04:00.276413 INFO::Fitting model to feature number 210, livG
+2024-12-15 18:04:00.291979 INFO::Fitting model to feature number 211, livH
+2024-12-15 18:04:00.306583 INFO::Fitting model to feature number 212, livK
+2024-12-15 18:04:00.321451 INFO::Fitting model to feature number 213, livM
+2024-12-15 18:04:00.336418 INFO::Fitting model to feature number 214, lldR
+2024-12-15 18:04:00.350389 INFO::Fitting model to feature number 215, lon
+2024-12-15 18:04:00.367472 INFO::Fitting model to feature number 216, lpxC
+2024-12-15 18:04:00.387087 INFO::Fitting model to feature number 217, lpxL
+2024-12-15 18:04:00.40321 INFO::Fitting model to feature number 218, lrhA
+2024-12-15 18:04:00.427812 INFO::Fitting model to feature number 219, ltaE
+2024-12-15 18:04:00.44482 INFO::Fitting model to feature number 220, luxS
+2024-12-15 18:04:00.463614 INFO::Fitting model to feature number 221, lysC
+2024-12-15 18:04:00.478724 INFO::Fitting model to feature number 222, lysP
+2024-12-15 18:04:00.540405 INFO::Fitting model to feature number 223, malE
+2024-12-15 18:04:00.558116 INFO::Fitting model to feature number 224, malK
+2024-12-15 18:04:00.574552 INFO::Fitting model to feature number 225, malM
+2024-12-15 18:04:00.593161 INFO::Fitting model to feature number 226, malQ
+2024-12-15 18:04:00.60941 INFO::Fitting model to feature number 227, malT
+2024-12-15 18:04:00.795008 INFO::Fitting model to feature number 228, malZ
+2024-12-15 18:04:00.815607 INFO::Fitting model to feature number 229, manA
+2024-12-15 18:04:00.837028 INFO::Fitting model to feature number 230, manX
+2024-12-15 18:04:00.859617 INFO::Fitting model to feature number 231, manY
+2024-12-15 18:04:00.882742 INFO::Fitting model to feature number 232, manZ
+2024-12-15 18:04:00.926024 INFO::Fitting model to feature number 233, map
+2024-12-15 18:04:00.946709 INFO::Fitting model to feature number 234, marA
+2024-12-15 18:04:00.963119 INFO::Fitting model to feature number 235, marB
+2024-12-15 18:04:00.9817 INFO::Fitting model to feature number 236, marR
+2024-12-15 18:04:00.999554 INFO::Fitting model to feature number 237, mdaB
+2024-12-15 18:04:01.017948 INFO::Fitting model to feature number 238, mdoB
+2024-12-15 18:04:01.039854 INFO::Fitting model to feature number 239, mdtJ
+2024-12-15 18:04:01.0593 INFO::Fitting model to feature number 240, mdtK
+2024-12-15 18:04:01.07997 INFO::Fitting model to feature number 241, metA
+2024-12-15 18:04:01.106023 INFO::Fitting model to feature number 242, metB
+2024-12-15 18:04:01.126331 INFO::Fitting model to feature number 243, metE
+2024-12-15 18:04:01.144903 INFO::Fitting model to feature number 244, metF
+2024-12-15 18:04:01.179598 INFO::Fitting model to feature number 245, metI
+2024-12-15 18:04:01.199372 INFO::Fitting model to feature number 246, metK
+2024-12-15 18:04:01.21686 INFO::Fitting model to feature number 247, metN
+2024-12-15 18:04:01.232792 INFO::Fitting model to feature number 248, metR
+2024-12-15 18:04:01.24759 INFO::Fitting model to feature number 249, metV
+2024-12-15 18:04:01.269483 INFO::Fitting model to feature number 250, metW
+2024-12-15 18:04:01.292349 INFO::Fitting model to feature number 251, metY
+2024-12-15 18:04:01.312198 INFO::Fitting model to feature number 252, metZ
+2024-12-15 18:04:01.331779 INFO::Fitting model to feature number 253, mglB
+2024-12-15 18:04:01.354916 INFO::Fitting model to feature number 254, mgtA
+2024-12-15 18:04:01.376117 INFO::Fitting model to feature number 255, micF
+2024-12-15 18:04:01.392592 INFO::Fitting model to feature number 256, mlrA
+2024-12-15 18:04:01.410069 INFO::Fitting model to feature number 257, mltC
+2024-12-15 18:04:01.429882 INFO::Fitting model to feature number 258, mltD
+2024-12-15 18:04:01.455912 INFO::Fitting model to feature number 259, modA
+2024-12-15 18:04:01.471964 INFO::Fitting model to feature number 260, modB
+2024-12-15 18:04:01.48644 INFO::Fitting model to feature number 261, modC
+2024-12-15 18:04:01.545814 INFO::Fitting model to feature number 262, modF
+2024-12-15 18:04:01.580675 INFO::Fitting model to feature number 263, mqo
+2024-12-15 18:04:01.598768 INFO::Fitting model to feature number 264, msyB
+2024-12-15 18:04:01.621896 INFO::Fitting model to feature number 265, mutY
+2024-12-15 18:04:01.845942 INFO::Fitting model to feature number 266, nagE
+2024-12-15 18:04:01.87714 INFO::Fitting model to feature number 267, napA
+2024-12-15 18:04:01.898767 INFO::Fitting model to feature number 268, napD
+2024-12-15 18:04:01.918715 INFO::Fitting model to feature number 269, napF
+2024-12-15 18:04:01.936775 INFO::Fitting model to feature number 270, narG
+2024-12-15 18:04:01.957914 INFO::Fitting model to feature number 271, narK
+2024-12-15 18:04:01.980083 INFO::Fitting model to feature number 272, ndh
+2024-12-15 18:04:02.010006 INFO::Fitting model to feature number 273, ndk
+2024-12-15 18:04:02.02874 INFO::Fitting model to feature number 274, nei
+2024-12-15 18:04:02.058171 INFO::Fitting model to feature number 275, nfo
+2024-12-15 18:04:02.073559 INFO::Fitting model to feature number 276, nfsA
+2024-12-15 18:04:02.100065 INFO::Fitting model to feature number 277, nhoA
+2024-12-15 18:04:02.119526 INFO::Fitting model to feature number 278, nirB
+2024-12-15 18:04:02.138764 INFO::Fitting model to feature number 279, nirD
+2024-12-15 18:04:02.156621 INFO::Fitting model to feature number 280, nlpA
+2024-12-15 18:04:02.176378 INFO::Fitting model to feature number 281, nrdD
+2024-12-15 18:04:02.190685 INFO::Fitting model to feature number 282, nth
+2024-12-15 18:04:02.203984 INFO::Fitting model to feature number 283, nuoC
+2024-12-15 18:04:02.219093 INFO::Fitting model to feature number 284, nuoE
+2024-12-15 18:04:02.234606 INFO::Fitting model to feature number 285, nuoF
+2024-12-15 18:04:02.250052 INFO::Fitting model to feature number 286, nuoG
+2024-12-15 18:04:02.267147 INFO::Fitting model to feature number 287, nuoH
+2024-12-15 18:04:02.284885 INFO::Fitting model to feature number 288, nuoI
+2024-12-15 18:04:02.301163 INFO::Fitting model to feature number 289, nuoJ
+2024-12-15 18:04:02.319406 INFO::Fitting model to feature number 290, nuoK
+2024-12-15 18:04:02.344428 INFO::Fitting model to feature number 291, nuoM
+2024-12-15 18:04:02.364099 INFO::Fitting model to feature number 292, ompC
+2024-12-15 18:04:02.384339 INFO::Fitting model to feature number 293, ompF
+2024-12-15 18:04:02.404545 INFO::Fitting model to feature number 294, ompR
+2024-12-15 18:04:02.424909 INFO::Fitting model to feature number 295, ompW
+2024-12-15 18:04:02.440971 INFO::Fitting model to feature number 296, ompX
+2024-12-15 18:04:02.468 INFO::Fitting model to feature number 297, osmB
+2024-12-15 18:04:02.485801 INFO::Fitting model to feature number 298, osmC
+2024-12-15 18:04:02.502232 INFO::Fitting model to feature number 299, osmE
+2024-12-15 18:04:02.568573 INFO::Fitting model to feature number 300, osmY
+2024-12-15 18:04:02.593464 INFO::Fitting model to feature number 301, otsA
+2024-12-15 18:04:02.636896 INFO::Fitting model to feature number 302, otsB
+2024-12-15 18:04:02.657332 INFO::Fitting model to feature number 303, oxyS
+2024-12-15 18:04:02.84633 INFO::Fitting model to feature number 304, panD
+2024-12-15 18:04:02.865781 INFO::Fitting model to feature number 305, pepE
+2024-12-15 18:04:02.886328 INFO::Fitting model to feature number 306, pflB
+2024-12-15 18:04:02.912156 INFO::Fitting model to feature number 307, pgi
+2024-12-15 18:04:02.938737 INFO::Fitting model to feature number 308, pheP
+2024-12-15 18:04:02.958201 INFO::Fitting model to feature number 309, phnB
+2024-12-15 18:04:02.981375 INFO::Fitting model to feature number 310, phoH
+2024-12-15 18:04:03.002538 INFO::Fitting model to feature number 311, plsX
+2024-12-15 18:04:03.03633 INFO::Fitting model to feature number 312, pncB
+2024-12-15 18:04:03.057431 INFO::Fitting model to feature number 313, pntA
+2024-12-15 18:04:03.090691 INFO::Fitting model to feature number 314, pntB
+2024-12-15 18:04:03.113718 INFO::Fitting model to feature number 315, potA
+2024-12-15 18:04:03.133291 INFO::Fitting model to feature number 316, potB
+2024-12-15 18:04:03.151613 INFO::Fitting model to feature number 317, potC
+2024-12-15 18:04:03.172414 INFO::Fitting model to feature number 318, potD
+2024-12-15 18:04:03.191782 INFO::Fitting model to feature number 319, potG
+2024-12-15 18:04:03.207824 INFO::Fitting model to feature number 320, potH
+2024-12-15 18:04:03.223151 INFO::Fitting model to feature number 321, potI
+2024-12-15 18:04:03.236168 INFO::Fitting model to feature number 322, poxB
+2024-12-15 18:04:03.253887 INFO::Fitting model to feature number 323, pps
+2024-12-15 18:04:03.276086 INFO::Fitting model to feature number 324, pqiA
+2024-12-15 18:04:03.297367 INFO::Fitting model to feature number 325, pqiB
+2024-12-15 18:04:03.34379 INFO::Fitting model to feature number 326, proK
+2024-12-15 18:04:03.36323 INFO::Fitting model to feature number 327, proV
+2024-12-15 18:04:03.382235 INFO::Fitting model to feature number 328, proW
+2024-12-15 18:04:03.400073 INFO::Fitting model to feature number 329, proX
+2024-12-15 18:04:03.419397 INFO::Fitting model to feature number 330, psiF
+2024-12-15 18:04:03.439457 INFO::Fitting model to feature number 331, putP
+2024-12-15 18:04:03.455933 INFO::Fitting model to feature number 332, pyrB
+2024-12-15 18:04:03.475537 INFO::Fitting model to feature number 333, pyrC
+2024-12-15 18:04:03.498923 INFO::Fitting model to feature number 334, pyrD
+2024-12-15 18:04:03.513409 INFO::Fitting model to feature number 335, pyrE
+2024-12-15 18:04:03.785605 INFO::Fitting model to feature number 336, pyrI
+2024-12-15 18:04:03.809346 INFO::Fitting model to feature number 337, pyrL
+2024-12-15 18:04:03.852877 INFO::Fitting model to feature number 338, qor
+2024-12-15 18:04:03.875924 INFO::Fitting model to feature number 339, rarD
+2024-12-15 18:04:03.891417 INFO::Fitting model to feature number 340, rbbA
+2024-12-15 18:04:03.903102 INFO::Fitting model to feature number 341, rbsA
+2024-12-15 18:04:03.915561 INFO::Fitting model to feature number 342, rbsC
+2024-12-15 18:04:03.929474 INFO::Fitting model to feature number 343, rbsD
+2024-12-15 18:04:03.944867 INFO::Fitting model to feature number 344, rcsA
+2024-12-15 18:04:03.96065 INFO::Fitting model to feature number 345, recA
+2024-12-15 18:04:03.990017 INFO::Fitting model to feature number 346, ribA
+2024-12-15 18:04:04.011409 INFO::Fitting model to feature number 347, ribB
+2024-12-15 18:04:04.03422 INFO::Fitting model to feature number 348, rihC
+2024-12-15 18:04:04.051043 INFO::Fitting model to feature number 349, rimK
+2024-12-15 18:04:04.070138 INFO::Fitting model to feature number 350, rluB
+2024-12-15 18:04:04.123487 INFO::Fitting model to feature number 351, rmf
+2024-12-15 18:04:04.146489 INFO::Fitting model to feature number 352, rnk
+2024-12-15 18:04:04.16559 INFO::Fitting model to feature number 353, rob
+2024-12-15 18:04:04.179645 INFO::Fitting model to feature number 354, rpmE
+2024-12-15 18:04:04.225489 INFO::Fitting model to feature number 355, rpoH
+2024-12-15 18:04:04.246075 INFO::Fitting model to feature number 356, rpoS
+2024-12-15 18:04:04.270588 INFO::Fitting model to feature number 357, rprA
+2024-12-15 18:04:04.296887 INFO::Fitting model to feature number 358, rsxD
+2024-12-15 18:04:04.315212 INFO::Fitting model to feature number 359, rsxE
+2024-12-15 18:04:04.328381 INFO::Fitting model to feature number 360, rsxG
+2024-12-15 18:04:04.341905 INFO::Fitting model to feature number 361, rtT
+2024-12-15 18:04:04.474204 INFO::Fitting model to feature number 362, rydB
+2024-12-15 18:04:04.490615 INFO::Fitting model to feature number 363, ryeC
+2024-12-15 18:04:04.51471 INFO::Fitting model to feature number 364, ryeE
+2024-12-15 18:04:04.627222 INFO::Fitting model to feature number 365, rygC
+2024-12-15 18:04:04.645922 INFO::Fitting model to feature number 366, rygD
+2024-12-15 18:04:04.701388 INFO::Fitting model to feature number 367, ryhA
+2024-12-15 18:04:04.896068 INFO::Fitting model to feature number 368, ryhB
+2024-12-15 18:04:04.91419 INFO::Fitting model to feature number 369, ryjA
+2024-12-15 18:04:04.935638 INFO::Fitting model to feature number 370, rzoR
+2024-12-15 18:04:04.982182 INFO::Fitting model to feature number 371, sanA
+2024-12-15 18:04:05.003278 INFO::Fitting model to feature number 372, sbp
+2024-12-15 18:04:05.020261 INFO::Fitting model to feature number 373, sdhA
+2024-12-15 18:04:05.035848 INFO::Fitting model to feature number 374, sdhB
+2024-12-15 18:04:05.050803 INFO::Fitting model to feature number 375, sdhC
+2024-12-15 18:04:05.066165 INFO::Fitting model to feature number 376, sdhD
+2024-12-15 18:04:05.080462 INFO::Fitting model to feature number 377, serW
+2024-12-15 18:04:05.124565 INFO::Fitting model to feature number 378, serX
+2024-12-15 18:04:05.190754 INFO::Fitting model to feature number 379, slp
+2024-12-15 18:04:05.20869 INFO::Fitting model to feature number 380, slyA
+2024-12-15 18:04:05.228459 INFO::Fitting model to feature number 381, sodA
+2024-12-15 18:04:05.247381 INFO::Fitting model to feature number 382, sodC
+2024-12-15 18:04:05.262708 INFO::Fitting model to feature number 383, soxR
+2024-12-15 18:04:05.278894 INFO::Fitting model to feature number 384, soxS
+2024-12-15 18:04:05.302394 INFO::Fitting model to feature number 385, speC
+2024-12-15 18:04:05.327714 INFO::Fitting model to feature number 386, spy
+2024-12-15 18:04:05.358668 INFO::Fitting model to feature number 387, sra
+2024-12-15 18:04:05.377509 INFO::Fitting model to feature number 388, ssuB
+2024-12-15 18:04:05.398818 INFO::Fitting model to feature number 389, sthA
+2024-12-15 18:04:05.413109 INFO::Fitting model to feature number 390, stpA
+2024-12-15 18:04:05.428011 INFO::Fitting model to feature number 391, sucA
+2024-12-15 18:04:05.443152 INFO::Fitting model to feature number 392, sucB
+2024-12-15 18:04:05.460238 INFO::Fitting model to feature number 393, sucC
+2024-12-15 18:04:05.477073 INFO::Fitting model to feature number 394, sucD
+2024-12-15 18:04:05.493333 INFO::Fitting model to feature number 395, sufA
+2024-12-15 18:04:05.512765 INFO::Fitting model to feature number 396, sufB
+2024-12-15 18:04:05.530451 INFO::Fitting model to feature number 397, sufC
+2024-12-15 18:04:05.597313 INFO::Fitting model to feature number 398, sufD
+2024-12-15 18:04:05.638712 INFO::Fitting model to feature number 399, sufE
+2024-12-15 18:04:05.672789 INFO::Fitting model to feature number 400, suhB
+2024-12-15 18:04:05.86709 INFO::Fitting model to feature number 401, talA
+2024-12-15 18:04:05.889065 INFO::Fitting model to feature number 402, tatD
+2024-12-15 18:04:05.910313 INFO::Fitting model to feature number 403, tbpA
+2024-12-15 18:04:05.945209 INFO::Fitting model to feature number 404, tesB
+2024-12-15 18:04:05.975726 INFO::Fitting model to feature number 405, tgt
+2024-12-15 18:04:05.99445 INFO::Fitting model to feature number 406, thrL
+2024-12-15 18:04:06.016661 INFO::Fitting model to feature number 407, thrT
+2024-12-15 18:04:06.038647 INFO::Fitting model to feature number 408, thrU
+2024-12-15 18:04:06.080112 INFO::Fitting model to feature number 409, thrV
+2024-12-15 18:04:06.107471 INFO::Fitting model to feature number 410, tilS
+2024-12-15 18:04:06.124893 INFO::Fitting model to feature number 411, tke1
+2024-12-15 18:04:06.140936 INFO::Fitting model to feature number 412, tktB
+2024-12-15 18:04:06.159069 INFO::Fitting model to feature number 413, tolC
+2024-12-15 18:04:06.178332 INFO::Fitting model to feature number 414, treA
+2024-12-15 18:04:06.195154 INFO::Fitting model to feature number 415, treB
+2024-12-15 18:04:06.221339 INFO::Fitting model to feature number 416, treC
+2024-12-15 18:04:06.237439 INFO::Fitting model to feature number 417, treF
+2024-12-15 18:04:06.257244 INFO::Fitting model to feature number 418, trpB
+2024-12-15 18:04:06.292783 INFO::Fitting model to feature number 419, trpC
+2024-12-15 18:04:06.329559 INFO::Fitting model to feature number 420, trpD
+2024-12-15 18:04:06.353468 INFO::Fitting model to feature number 421, trpE
+2024-12-15 18:04:06.373622 INFO::Fitting model to feature number 422, tyrT
+2024-12-15 18:04:06.396315 INFO::Fitting model to feature number 423, tyrV
+2024-12-15 18:04:06.421602 INFO::Fitting model to feature number 424, ubiD
+2024-12-15 18:04:06.459533 INFO::Fitting model to feature number 425, udk
+2024-12-15 18:04:06.488329 INFO::Fitting model to feature number 426, ugd
+2024-12-15 18:04:06.501837 INFO::Fitting model to feature number 427, uraA
+2024-12-15 18:04:06.527251 INFO::Fitting model to feature number 428, uvrY
+2024-12-15 18:04:06.54642 INFO::Fitting model to feature number 429, vacJ
+2024-12-15 18:04:06.609375 INFO::Fitting model to feature number 430, valT
+2024-12-15 18:04:06.634255 INFO::Fitting model to feature number 431, valU
+2024-12-15 18:04:06.657844 INFO::Fitting model to feature number 432, valV
+2024-12-15 18:04:06.68213 INFO::Fitting model to feature number 433, valW
+2024-12-15 18:04:06.70942 INFO::Fitting model to feature number 434, valX
+2024-12-15 18:04:06.913769 INFO::Fitting model to feature number 435, valY
+2024-12-15 18:04:06.942379 INFO::Fitting model to feature number 436, valZ
+2024-12-15 18:04:06.959961 INFO::Fitting model to feature number 437, wrbA
+2024-12-15 18:04:06.982204 INFO::Fitting model to feature number 438, yaaX
+2024-12-15 18:04:07.003811 INFO::Fitting model to feature number 439, yaaY
+2024-12-15 18:04:07.022256 INFO::Fitting model to feature number 440, yabI
+2024-12-15 18:04:07.043333 INFO::Fitting model to feature number 441, yabP
+2024-12-15 18:04:07.062562 INFO::Fitting model to feature number 442, yabQ
+2024-12-15 18:04:07.081989 INFO::Fitting model to feature number 443, yadG
+2024-12-15 18:04:07.105241 INFO::Fitting model to feature number 444, yadH
+2024-12-15 18:04:07.124498 INFO::Fitting model to feature number 445, yadI
+2024-12-15 18:04:07.144073 INFO::Fitting model to feature number 446, yadR
+2024-12-15 18:04:07.173128 INFO::Fitting model to feature number 447, yaeR
+2024-12-15 18:04:07.197415 INFO::Fitting model to feature number 448, yafK
+2024-12-15 18:04:07.212951 INFO::Fitting model to feature number 449, yagF
+2024-12-15 18:04:07.237005 INFO::Fitting model to feature number 450, yagG
+2024-12-15 18:04:07.287603 INFO::Fitting model to feature number 451, yahO
+2024-12-15 18:04:07.305941 INFO::Fitting model to feature number 452, yaiA
+2024-12-15 18:04:07.325665 INFO::Fitting model to feature number 453, yajI
+2024-12-15 18:04:07.343628 INFO::Fitting model to feature number 454, ybaA
+2024-12-15 18:04:07.358237 INFO::Fitting model to feature number 455, ybaJ
+2024-12-15 18:04:07.380683 INFO::Fitting model to feature number 456, ybaL
+2024-12-15 18:04:07.418902 INFO::Fitting model to feature number 457, ybaO
+2024-12-15 18:04:07.440303 INFO::Fitting model to feature number 458, ybaS
+2024-12-15 18:04:07.457358 INFO::Fitting model to feature number 459, ybaT
+2024-12-15 18:04:07.474382 INFO::Fitting model to feature number 460, ybaY
+2024-12-15 18:04:07.499598 INFO::Fitting model to feature number 461, ybbJ
+2024-12-15 18:04:07.530091 INFO::Fitting model to feature number 462, ybbK
+2024-12-15 18:04:07.550982 INFO::Fitting model to feature number 463, ybcI
+2024-12-15 18:04:07.612349 INFO::Fitting model to feature number 464, ybdL
+2024-12-15 18:04:07.631706 INFO::Fitting model to feature number 465, ybdR
+2024-12-15 18:04:07.656716 INFO::Fitting model to feature number 466, ybeL
+2024-12-15 18:04:07.685195 INFO::Fitting model to feature number 467, ybgE
+2024-12-15 18:04:07.712151 INFO::Fitting model to feature number 468, ybgH
+2024-12-15 18:04:07.734048 INFO::Fitting model to feature number 469, ybgS
+2024-12-15 18:04:07.925363 INFO::Fitting model to feature number 470, ybgT
+2024-12-15 18:04:07.947501 INFO::Fitting model to feature number 471, ybhE
+2024-12-15 18:04:07.970237 INFO::Fitting model to feature number 472, ybhK
+2024-12-15 18:04:07.991505 INFO::Fitting model to feature number 473, ybhL
+2024-12-15 18:04:08.026183 INFO::Fitting model to feature number 474, ybhN
+2024-12-15 18:04:08.045519 INFO::Fitting model to feature number 475, ybhO
+2024-12-15 18:04:08.06908 INFO::Fitting model to feature number 476, ybhP
+2024-12-15 18:04:08.089821 INFO::Fitting model to feature number 477, ybhT
+2024-12-15 18:04:08.108902 INFO::Fitting model to feature number 478, ybiJ
+2024-12-15 18:04:08.129767 INFO::Fitting model to feature number 479, ybiM
+2024-12-15 18:04:08.155454 INFO::Fitting model to feature number 480, ybiO
+2024-12-15 18:04:08.177592 INFO::Fitting model to feature number 481, ybiT
+2024-12-15 18:04:08.204004 INFO::Fitting model to feature number 482, ybiU
+2024-12-15 18:04:08.225973 INFO::Fitting model to feature number 483, ybiV
+2024-12-15 18:04:08.245648 INFO::Fitting model to feature number 484, ybjC
+2024-12-15 18:04:08.270279 INFO::Fitting model to feature number 485, ybjM
+2024-12-15 18:04:08.290373 INFO::Fitting model to feature number 486, ybjN
+2024-12-15 18:04:08.309542 INFO::Fitting model to feature number 487, ycaC
+2024-12-15 18:04:08.328592 INFO::Fitting model to feature number 488, ycaO
+2024-12-15 18:04:08.351364 INFO::Fitting model to feature number 489, ycaP
+2024-12-15 18:04:08.369578 INFO::Fitting model to feature number 490, ycbC
+2024-12-15 18:04:08.389447 INFO::Fitting model to feature number 491, ycbW
+2024-12-15 18:04:08.406382 INFO::Fitting model to feature number 492, yccJ
+2024-12-15 18:04:08.425179 INFO::Fitting model to feature number 493, ycdB
+2024-12-15 18:04:08.441468 INFO::Fitting model to feature number 494, ycdN
+2024-12-15 18:04:08.452824 INFO::Fitting model to feature number 495, ycdN_2
+2024-12-15 18:04:08.465045 INFO::Fitting model to feature number 496, ycdO
+2024-12-15 18:04:08.487708 INFO::Fitting model to feature number 497, yceA
+2024-12-15 18:04:08.505024 INFO::Fitting model to feature number 498, yceB
+2024-12-15 18:04:08.534517 INFO::Fitting model to feature number 499, yceI
+2024-12-15 18:04:08.556542 INFO::Fitting model to feature number 500, yceP
+2024-12-15 18:04:08.575671 INFO::Fitting model to feature number 501, ycfJ
+2024-12-15 18:04:08.590196 INFO::Fitting model to feature number 502, ycfR
+2024-12-15 18:04:08.609871 INFO::Fitting model to feature number 503, ycfT
+2024-12-15 18:04:08.671944 INFO::Fitting model to feature number 504, ycgB
+2024-12-15 18:04:08.69454 INFO::Fitting model to feature number 505, ychA
+2024-12-15 18:04:08.718069 INFO::Fitting model to feature number 506, ychP
+2024-12-15 18:04:08.73657 INFO::Fitting model to feature number 507, yciE
+2024-12-15 18:04:08.754957 INFO::Fitting model to feature number 508, yciF
+2024-12-15 18:04:08.960002 INFO::Fitting model to feature number 509, yciG
+2024-12-15 18:04:08.976606 INFO::Fitting model to feature number 510, yciW
+2024-12-15 18:04:09.0003 INFO::Fitting model to feature number 511, yciX
+2024-12-15 18:04:09.020883 INFO::Fitting model to feature number 512, yciX_1
+2024-12-15 18:04:09.038993 INFO::Fitting model to feature number 513, yciX_2
+2024-12-15 18:04:09.062747 INFO::Fitting model to feature number 514, ydbD
+2024-12-15 18:04:09.08032 INFO::Fitting model to feature number 515, ydcI
+2024-12-15 18:04:09.097603 INFO::Fitting model to feature number 516, ydcK
+2024-12-15 18:04:09.119438 INFO::Fitting model to feature number 517, ydcL
+2024-12-15 18:04:09.140005 INFO::Fitting model to feature number 518, yddV
+2024-12-15 18:04:09.160941 INFO::Fitting model to feature number 519, ydeH
+2024-12-15 18:04:09.183157 INFO::Fitting model to feature number 520, ydeI
+2024-12-15 18:04:09.465318 INFO::Fitting model to feature number 521, ydeJ
+2024-12-15 18:04:09.481971 INFO::Fitting model to feature number 522, ydgT
+2024-12-15 18:04:09.495685 INFO::Fitting model to feature number 523, ydhA
+2024-12-15 18:04:09.519461 INFO::Fitting model to feature number 524, ydhH
+2024-12-15 18:04:09.538265 INFO::Fitting model to feature number 525, ydhS
+2024-12-15 18:04:09.555287 INFO::Fitting model to feature number 526, ydiA
+2024-12-15 18:04:09.581617 INFO::Fitting model to feature number 527, ydiH
+2024-12-15 18:04:09.599504 INFO::Fitting model to feature number 528, ydiY
+2024-12-15 18:04:09.671304 INFO::Fitting model to feature number 529, ydiZ
+2024-12-15 18:04:09.696102 INFO::Fitting model to feature number 530, ydjX
+2024-12-15 18:04:09.716167 INFO::Fitting model to feature number 531, ydjY
+2024-12-15 18:04:09.737225 INFO::Fitting model to feature number 532, ydjZ
+2024-12-15 18:04:09.945209 INFO::Fitting model to feature number 533, yeaE
+2024-12-15 18:04:09.96457 INFO::Fitting model to feature number 534, yeaG
+2024-12-15 18:04:09.987925 INFO::Fitting model to feature number 535, yeaH
+2024-12-15 18:04:10.011644 INFO::Fitting model to feature number 536, yeaO
+2024-12-15 18:04:10.034172 INFO::Fitting model to feature number 537, yeaQ
+2024-12-15 18:04:10.059469 INFO::Fitting model to feature number 538, yeaS
+2024-12-15 18:04:10.082753 INFO::Fitting model to feature number 539, yebE
+2024-12-15 18:04:10.104301 INFO::Fitting model to feature number 540, yebV
+2024-12-15 18:04:10.126094 INFO::Fitting model to feature number 541, yecH
+2024-12-15 18:04:10.144904 INFO::Fitting model to feature number 542, yecI
+2024-12-15 18:04:10.167593 INFO::Fitting model to feature number 543, yedP
+2024-12-15 18:04:10.242423 INFO::Fitting model to feature number 544, yedS_3
+2024-12-15 18:04:10.255554 INFO::Fitting model to feature number 545, yedV
+2024-12-15 18:04:10.284464 INFO::Fitting model to feature number 546, yedW
+2024-12-15 18:04:10.299997 INFO::Fitting model to feature number 547, yeeD
+2024-12-15 18:04:10.324646 INFO::Fitting model to feature number 548, yeeF
+2024-12-15 18:04:10.351598 INFO::Fitting model to feature number 549, yehT
+2024-12-15 18:04:10.368936 INFO::Fitting model to feature number 550, yehU
+2024-12-15 18:04:10.386111 INFO::Fitting model to feature number 551, yehX
+2024-12-15 18:04:10.404589 INFO::Fitting model to feature number 552, yehZ
+2024-12-15 18:04:10.424807 INFO::Fitting model to feature number 553, yeiI
+2024-12-15 18:04:10.44044 INFO::Fitting model to feature number 554, yeiR
+2024-12-15 18:04:10.453515 INFO::Fitting model to feature number 555, yeiS
+2024-12-15 18:04:10.467269 INFO::Fitting model to feature number 556, yeiU
+2024-12-15 18:04:10.48759 INFO::Fitting model to feature number 557, yejG
+2024-12-15 18:04:10.517058 INFO::Fitting model to feature number 558, yfbR
+2024-12-15 18:04:10.535595 INFO::Fitting model to feature number 559, yfcG
+2024-12-15 18:04:10.552743 INFO::Fitting model to feature number 560, yfcZ
+2024-12-15 18:04:10.568532 INFO::Fitting model to feature number 561, yfdC
+2024-12-15 18:04:10.586156 INFO::Fitting model to feature number 562, yffH
+2024-12-15 18:04:10.603576 INFO::Fitting model to feature number 563, yfgG
+2024-12-15 18:04:10.619205 INFO::Fitting model to feature number 564, yfgO
+2024-12-15 18:04:10.687749 INFO::Fitting model to feature number 565, yfhL
+2024-12-15 18:04:10.706384 INFO::Fitting model to feature number 566, yfiA
+2024-12-15 18:04:10.913161 INFO::Fitting model to feature number 567, yfiB
+2024-12-15 18:04:10.938326 INFO::Fitting model to feature number 568, yfiD
+2024-12-15 18:04:10.960545 INFO::Fitting model to feature number 569, ygaC
+2024-12-15 18:04:10.982256 INFO::Fitting model to feature number 570, ygaD
+2024-12-15 18:04:11.015148 INFO::Fitting model to feature number 571, ygaM
+2024-12-15 18:04:11.036799 INFO::Fitting model to feature number 572, ygaU
+2024-12-15 18:04:11.059013 INFO::Fitting model to feature number 573, ygaX
+2024-12-15 18:04:11.077779 INFO::Fitting model to feature number 574, ygaY
+2024-12-15 18:04:11.097439 INFO::Fitting model to feature number 575, ygbE
+2024-12-15 18:04:11.129944 INFO::Fitting model to feature number 576, ygdI
+2024-12-15 18:04:11.151582 INFO::Fitting model to feature number 577, ygdR
+2024-12-15 18:04:11.173121 INFO::Fitting model to feature number 578, ygfZ
+2024-12-15 18:04:11.192309 INFO::Fitting model to feature number 579, yggG
+2024-12-15 18:04:11.214956 INFO::Fitting model to feature number 580, yggX
+2024-12-15 18:04:11.235027 INFO::Fitting model to feature number 581, yghA
+2024-12-15 18:04:11.278654 INFO::Fitting model to feature number 582, yghW
+2024-12-15 18:04:11.294958 INFO::Fitting model to feature number 583, yghX
+2024-12-15 18:04:11.311888 INFO::Fitting model to feature number 584, yghY
+2024-12-15 18:04:11.330683 INFO::Fitting model to feature number 585, ygiN
+2024-12-15 18:04:11.348786 INFO::Fitting model to feature number 586, ygiT
+2024-12-15 18:04:11.368033 INFO::Fitting model to feature number 587, ygiU
+2024-12-15 18:04:11.383205 INFO::Fitting model to feature number 588, ygjG
+2024-12-15 18:04:11.419297 INFO::Fitting model to feature number 589, yhbO
+2024-12-15 18:04:11.437448 INFO::Fitting model to feature number 590, yhbU
+2024-12-15 18:04:11.455093 INFO::Fitting model to feature number 591, yhbW
+2024-12-15 18:04:11.474183 INFO::Fitting model to feature number 592, yhcN
+2024-12-15 18:04:11.48897 INFO::Fitting model to feature number 593, yhcO
+2024-12-15 18:04:11.522838 INFO::Fitting model to feature number 594, yhdV
+2024-12-15 18:04:11.541656 INFO::Fitting model to feature number 595, yhfG
+2024-12-15 18:04:11.564911 INFO::Fitting model to feature number 596, yhfZ
+2024-12-15 18:04:11.583766 INFO::Fitting model to feature number 597, yhgE
+2024-12-15 18:04:11.600838 INFO::Fitting model to feature number 598, yhgF
+2024-12-15 18:04:11.617558 INFO::Fitting model to feature number 599, yhhA
+2024-12-15 18:04:11.6356 INFO::Fitting model to feature number 600, yhhJ
+2024-12-15 18:04:11.649644 INFO::Fitting model to feature number 601, yhhN
+2024-12-15 18:04:11.718801 INFO::Fitting model to feature number 602, yhhT
+2024-12-15 18:04:11.744807 INFO::Fitting model to feature number 603, yhiD
+2024-12-15 18:04:11.765839 INFO::Fitting model to feature number 604, yhiN
+2024-12-15 18:04:11.790402 INFO::Fitting model to feature number 605, yhiO
+2024-12-15 18:04:11.827258 INFO::Fitting model to feature number 606, yhjB
+2024-12-15 18:04:11.847504 INFO::Fitting model to feature number 607, yhjE
+2024-12-15 18:04:12.04492 INFO::Fitting model to feature number 608, yhjG
+2024-12-15 18:04:12.064484 INFO::Fitting model to feature number 609, yhjX
+2024-12-15 18:04:12.083832 INFO::Fitting model to feature number 610, yiaA
+2024-12-15 18:04:12.101613 INFO::Fitting model to feature number 611, yiaB
+2024-12-15 18:04:12.119479 INFO::Fitting model to feature number 612, yiaD
+2024-12-15 18:04:12.139491 INFO::Fitting model to feature number 613, yiaG
+2024-12-15 18:04:12.162331 INFO::Fitting model to feature number 614, yibF
+2024-12-15 18:04:12.18932 INFO::Fitting model to feature number 615, yibT
+2024-12-15 18:04:12.209899 INFO::Fitting model to feature number 616, yicM
+2024-12-15 18:04:12.234037 INFO::Fitting model to feature number 617, yidF
+2024-12-15 18:04:12.253687 INFO::Fitting model to feature number 618, yidI
+2024-12-15 18:04:12.284273 INFO::Fitting model to feature number 619, yidL
+2024-12-15 18:04:12.30419 INFO::Fitting model to feature number 620, yidQ
+2024-12-15 18:04:12.320713 INFO::Fitting model to feature number 621, yidX
+2024-12-15 18:04:12.34169 INFO::Fitting model to feature number 622, yifE
+2024-12-15 18:04:12.357166 INFO::Fitting model to feature number 623, yigF
+2024-12-15 18:04:12.374783 INFO::Fitting model to feature number 624, yigG
+2024-12-15 18:04:12.396053 INFO::Fitting model to feature number 625, yigI
+2024-12-15 18:04:12.411152 INFO::Fitting model to feature number 626, yihM
+2024-12-15 18:04:12.423248 INFO::Fitting model to feature number 627, yiiU
+2024-12-15 18:04:12.461737 INFO::Fitting model to feature number 628, yjbA
+2024-12-15 18:04:12.477378 INFO::Fitting model to feature number 629, yjbE
+2024-12-15 18:04:12.497993 INFO::Fitting model to feature number 630, yjbF
+2024-12-15 18:04:12.512823 INFO::Fitting model to feature number 631, yjbG
+2024-12-15 18:04:12.525579 INFO::Fitting model to feature number 632, yjbH
+2024-12-15 18:04:12.53829 INFO::Fitting model to feature number 633, yjbJ
+2024-12-15 18:04:12.553999 INFO::Fitting model to feature number 634, yjbQ
+2024-12-15 18:04:12.57639 INFO::Fitting model to feature number 635, yjbR
+2024-12-15 18:04:12.598925 INFO::Fitting model to feature number 636, yjcB
+2024-12-15 18:04:12.613354 INFO::Fitting model to feature number 637, yjcD
+2024-12-15 18:04:12.629376 INFO::Fitting model to feature number 638, yjcH
+2024-12-15 18:04:12.641864 INFO::Fitting model to feature number 639, yjdJ
+2024-12-15 18:04:12.659848 INFO::Fitting model to feature number 640, yjfN
+2024-12-15 18:04:12.676693 INFO::Fitting model to feature number 641, yjgB
+2024-12-15 18:04:12.748248 INFO::Fitting model to feature number 642, yjiY
+2024-12-15 18:04:12.789261 INFO::Fitting model to feature number 643, yjjI
+2024-12-15 18:04:12.808732 INFO::Fitting model to feature number 644, yjjW
+2024-12-15 18:04:12.829446 INFO::Fitting model to feature number 645, yjjZ
+2024-12-15 18:04:13.023296 INFO::Fitting model to feature number 646, ykiA
+2024-12-15 18:04:13.04665 INFO::Fitting model to feature number 647, ylaC
+2024-12-15 18:04:13.071204 INFO::Fitting model to feature number 648, yliA
+2024-12-15 18:04:13.111159 INFO::Fitting model to feature number 649, yliC
+2024-12-15 18:04:13.138687 INFO::Fitting model to feature number 650, yliD
+2024-12-15 18:04:13.179285 INFO::Fitting model to feature number 651, yliE
+2024-12-15 18:04:13.199006 INFO::Fitting model to feature number 652, yliF
+2024-12-15 18:04:13.215476 INFO::Fitting model to feature number 653, yliH
+2024-12-15 18:04:13.235239 INFO::Fitting model to feature number 654, yliI
+2024-12-15 18:04:13.261828 INFO::Fitting model to feature number 655, ymbA
+2024-12-15 18:04:13.293411 INFO::Fitting model to feature number 656, ymdF
+2024-12-15 18:04:13.312022 INFO::Fitting model to feature number 657, ymgE
+2024-12-15 18:04:13.330062 INFO::Fitting model to feature number 658, yncB
+2024-12-15 18:04:13.349433 INFO::Fitting model to feature number 659, yncC
+2024-12-15 18:04:13.367593 INFO::Fitting model to feature number 660, yncD
+2024-12-15 18:04:13.387858 INFO::Fitting model to feature number 661, yncG
+2024-12-15 18:04:13.40962 INFO::Fitting model to feature number 662, ynfD
+2024-12-15 18:04:13.443205 INFO::Fitting model to feature number 663, ynfK
+2024-12-15 18:04:13.460562 INFO::Fitting model to feature number 664, ynfP
+2024-12-15 18:04:13.521475 INFO::Fitting model to feature number 665, ynhG
+2024-12-15 18:04:13.544993 INFO::Fitting model to feature number 666, ynjE
+2024-12-15 18:04:13.564796 INFO::Fitting model to feature number 667, ynjI
+2024-12-15 18:04:13.585614 INFO::Fitting model to feature number 668, yobG
+2024-12-15 18:04:13.811666 INFO::Fitting model to feature number 669, yobH
+2024-12-15 18:04:13.842724 INFO::Fitting model to feature number 670, yodB
+2024-12-15 18:04:13.858402 INFO::Fitting model to feature number 671, yodC
+2024-12-15 18:04:13.905443 INFO::Fitting model to feature number 672, yodD
+2024-12-15 18:04:13.926266 INFO::Fitting model to feature number 673, yohC
+2024-12-15 18:04:13.950404 INFO::Fitting model to feature number 674, yohF
+2024-12-15 18:04:13.984898 INFO::Fitting model to feature number 675, yohN
+2024-12-15 18:04:14.01059 INFO::Fitting model to feature number 676, yojI
+2024-12-15 18:04:14.025711 INFO::Fitting model to feature number 677, ypeB
+2024-12-15 18:04:14.043456 INFO::Fitting model to feature number 678, ypfG
+2024-12-15 18:04:14.064123 INFO::Fitting model to feature number 679, yphA
+2024-12-15 18:04:14.088519 INFO::Fitting model to feature number 680, yqaA
+2024-12-15 18:04:14.107345 INFO::Fitting model to feature number 681, yqeF
+2024-12-15 18:04:14.120663 INFO::Fitting model to feature number 682, yqgB
+2024-12-15 18:04:14.141558 INFO::Fitting model to feature number 683, yqhD
+2024-12-15 18:04:14.159543 INFO::Fitting model to feature number 684, yqjC
+2024-12-15 18:04:14.179169 INFO::Fitting model to feature number 685, yqjD
+2024-12-15 18:04:14.204106 INFO::Fitting model to feature number 686, yqjE
+2024-12-15 18:04:14.235159 INFO::Fitting model to feature number 687, yqjG
+2024-12-15 18:04:14.254846 INFO::Fitting model to feature number 688, yqjK
+2024-12-15 18:04:14.276668 INFO::Fitting model to feature number 689, yraL
+2024-12-15 18:04:14.295979 INFO::Fitting model to feature number 690, yrbL
+2024-12-15 18:04:14.315528 INFO::Fitting model to feature number 691, ysaB
+2024-12-15 18:04:14.332558 INFO::Fitting model to feature number 692, ysgA
+2024-12-15 18:04:14.352327 INFO::Fitting model to feature number 693, ytfK
+2024-12-15 18:04:14.370714 INFO::Fitting model to feature number 694, ytjA
+2024-12-15 18:04:14.389198 INFO::Fitting model to feature number 695, zitB
+2024-12-15 18:04:14.407551 INFO::Fitting model to feature number 696, zwf
+2024-12-15 18:04:14.46715 INFO::Counting prevalence for each feature
+2024-12-15 18:04:14.537569 INFO::Writing all results to file (ordered by increasing q-values): analysis/CP/tweedieverse//all_results.tsv
+2024-12-15 18:04:14.543487 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.050000 ) to file (ordered by increasing q-values): analysis/CP/tweedieverse//significant_results.tsv
+2024-12-15 18:04:14.544684 INFO::Writing Tweedie inxed plot to file: analysis/CP/tweedieverse/
+2024-12-15 18:04:14.545193 INFO::Plotting tweedie.index  colored by metadata
+2024-12-15 18:04:14.54565 INFO::Plotting tweedie.index
+2024-12-15 18:04:14.855088 INFO::Writing association plots (one for each significant association) to output folder: analysis/CP/tweedieverse/
+2024-12-15 18:04:14.880198 INFO::Plotting associations from most to least significant, grouped by metadata
+2024-12-15 18:04:14.881081 INFO::Plotting data for metadata number 1, ResistanceType
+2024-12-15 18:04:14.88199 INFO::Creating boxplot for categorical data, ResistanceType vs hsdR
+2024-12-15 18:04:14.961918 INFO::Creating boxplot for categorical data, ResistanceType vs yagG
+2024-12-15 18:04:15.065944 INFO::Creating boxplot for categorical data, ResistanceType vs yjiY
+2024-12-15 18:04:15.132423 INFO::Creating boxplot for categorical data, ResistanceType vs yagF
+2024-12-15 18:04:15.192881 INFO::Creating boxplot for categorical data, ResistanceType vs ygjG
+2024-12-15 18:04:15.257614 INFO::Creating boxplot for categorical data, ResistanceType vs rtT
+2024-12-15 18:04:15.317106 INFO::Creating boxplot for categorical data, ResistanceType vs yohC
+2024-12-15 18:04:15.383885 INFO::Creating boxplot for categorical data, ResistanceType vs intB
+2024-12-15 18:04:15.438713 INFO::Creating boxplot for categorical data, ResistanceType vs ydbD
+2024-12-15 18:04:15.865614 INFO::Creating boxplot for categorical data, ResistanceType vs yedP
+2024-12-15 18:04:15.930046 INFO::Creating boxplot for categorical data, ResistanceType vs yodC
+2024-12-15 18:04:15.999147 INFO::Creating boxplot for categorical data, ResistanceType vs yohF
+2024-12-15 18:04:16.058367 INFO::Creating boxplot for categorical data, ResistanceType vs ryeE
+2024-12-15 18:04:16.115004 INFO::Creating boxplot for categorical data, ResistanceType vs gntT
+2024-12-15 18:04:16.167726 INFO::Creating boxplot for categorical data, ResistanceType vs chaC
+2024-12-15 18:04:16.228572 INFO::Creating boxplot for categorical data, ResistanceType vs phnB
+2024-12-15 18:04:16.281585 INFO::Creating boxplot for categorical data, ResistanceType vs rpoS
+2024-12-15 18:04:16.334024 INFO::Creating boxplot for categorical data, ResistanceType vs pyrE
+2024-12-15 18:04:16.386542 INFO::Creating boxplot for categorical data, ResistanceType vs rzoR
+2024-12-15 18:04:16.440446 INFO::Creating boxplot for categorical data, ResistanceType vs serX
+2024-12-15 18:04:16.723452 INFO::Creating boxplot for categorical data, ResistanceType vs yodD
+2024-12-15 18:04:16.790369 INFO::Creating boxplot for categorical data, ResistanceType vs hcaC
+2024-12-15 18:04:16.867846 INFO::Creating boxplot for categorical data, ResistanceType vs serW
+2024-12-15 18:04:16.939703 INFO::Creating boxplot for categorical data, ResistanceType vs ydiA
+2024-12-15 18:04:17.012162 INFO::Creating boxplot for categorical data, ResistanceType vs rygD
+2024-12-15 18:04:17.068756 INFO::Creating boxplot for categorical data, ResistanceType vs bolA
+2024-12-15 18:04:17.123492 INFO::Creating boxplot for categorical data, ResistanceType vs ybaY
+2024-12-15 18:04:17.178479 INFO::Creating boxplot for categorical data, ResistanceType vs ydcK
+2024-12-15 18:04:17.240212 INFO::Creating boxplot for categorical data, ResistanceType vs yjbQ
+2024-12-15 18:04:17.293048 INFO::Creating boxplot for categorical data, ResistanceType vs fic
+2024-12-15 18:04:17.346685 INFO::Creating boxplot for categorical data, ResistanceType vs tbpA
+2024-12-15 18:04:17.400502 INFO::Creating boxplot for categorical data, ResistanceType vs yjgB
+2024-12-15 18:04:17.453826 INFO::Creating boxplot for categorical data, ResistanceType vs ybaA
+2024-12-15 18:04:17.514296 INFO::Creating boxplot for categorical data, ResistanceType vs yhjG
+2024-12-15 18:04:17.758108 INFO::Creating boxplot for categorical data, ResistanceType vs cpxP
+2024-12-15 18:04:17.826089 INFO::Creating boxplot for categorical data, ResistanceType vs gltF
+2024-12-15 18:04:17.888227 INFO::Creating boxplot for categorical data, ResistanceType vs yliE
+2024-12-15 18:04:17.957903 INFO::Creating boxplot for categorical data, ResistanceType vs yliF
+2024-12-15 18:04:18.016681 INFO::Creating boxplot for categorical data, ResistanceType vs yqjE
+2024-12-15 18:04:18.072024 INFO::Creating boxplot for categorical data, ResistanceType vs yceB
+2024-12-15 18:04:18.126176 INFO::Creating boxplot for categorical data, ResistanceType vs yliD
+2024-12-15 18:04:18.187196 INFO::Creating boxplot for categorical data, ResistanceType vs blc
+2024-12-15 18:04:18.240716 INFO::Creating boxplot for categorical data, ResistanceType vs fbaB
+2024-12-15 18:04:18.294327 INFO::Creating boxplot for categorical data, ResistanceType vs gcvT
+2024-12-15 18:04:18.348446 INFO::Creating boxplot for categorical data, ResistanceType vs ilvC
+2024-12-15 18:04:18.40208 INFO::Creating boxplot for categorical data, ResistanceType vs ompX
+2024-12-15 18:04:18.462564 INFO::Creating boxplot for categorical data, ResistanceType vs ybeL
+2024-12-15 18:04:18.516015 INFO::Creating boxplot for categorical data, ResistanceType vs yfiA
+2024-12-15 18:04:18.611787 INFO::Creating boxplot for categorical data, ResistanceType vs yhcO
+2024-12-15 18:04:18.824232 INFO::Creating boxplot for categorical data, ResistanceType vs yliA
+2024-12-15 18:04:18.898466 INFO::Creating boxplot for categorical data, ResistanceType vs aidB
+2024-12-15 18:04:18.959179 INFO::Creating boxplot for categorical data, ResistanceType vs ecnB
+2024-12-15 18:04:19.020329 INFO::Creating boxplot for categorical data, ResistanceType vs yjbR
+2024-12-15 18:04:19.07803 INFO::Creating boxplot for categorical data, ResistanceType vs ryeC
+2024-12-15 18:04:19.138666 INFO::Creating boxplot for categorical data, ResistanceType vs yghY
+2024-12-15 18:04:19.191958 INFO::Creating boxplot for categorical data, ResistanceType vs yibF
+2024-12-15 18:04:19.24635 INFO::Creating boxplot for categorical data, ResistanceType vs yliC
+2024-12-15 18:04:19.300029 INFO::Creating boxplot for categorical data, ResistanceType vs katG
+2024-12-15 18:04:19.360758 INFO::Creating boxplot for categorical data, ResistanceType vs osmC
+2024-12-15 18:04:19.415581 INFO::Creating boxplot for categorical data, ResistanceType vs ryhA
+2024-12-15 18:04:19.469416 INFO::Creating boxplot for categorical data, ResistanceType vs tesB
+2024-12-15 18:04:19.523011 INFO::Creating boxplot for categorical data, ResistanceType vs valW
+2024-12-15 18:04:19.782863 INFO::Creating boxplot for categorical data, ResistanceType vs nagE
+2024-12-15 18:04:19.849087 INFO::Creating boxplot for categorical data, ResistanceType vs dps
+2024-12-15 18:04:19.91373 INFO::Creating boxplot for categorical data, ResistanceType vs hisA
+2024-12-15 18:04:19.973693 INFO::Creating boxplot for categorical data, ResistanceType vs modF
+2024-12-15 18:04:20.033587 INFO::Creating boxplot for categorical data, ResistanceType vs yqjK
+2024-12-15 18:04:20.094948 INFO::Creating boxplot for categorical data, ResistanceType vs valV
+2024-12-15 18:04:20.148546 INFO::Creating boxplot for categorical data, ResistanceType vs slp
+2024-12-15 18:04:20.202254 INFO::Creating boxplot for categorical data, ResistanceType vs yjfN

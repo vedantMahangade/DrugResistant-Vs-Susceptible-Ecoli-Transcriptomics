@@ -7,25 +7,44 @@ editor: visual
 ## Packages
 
 ```{r}
+# For CRAN packages
+install.packages(c("tidyverse", "ggplot2", "EnhancedVolcano", "pheatmap", 
+                   "RColorBrewer", "ComplexUpset", "Tweedieverse"))
+
+# For Bioconductor packages
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install(c("EnhancedVolcano", "clusterProfiler", "org.EcK12.eg.db", "enrichplot", "DOSE"))
+
+```
+
+```{r}
+# Data manipulation and processing
+library(tidyverse)
+
+# Visualization and Plotting
 library(ggplot2)
 library(pheatmap)
-library(tidyverse)
-library(Tweedieverse)
-library(EnhancedVolcano)
-library(dplyr)
-library(RColorBrewer) 
+library(RColorBrewer)
 library(VennDiagram)
 library(ComplexUpset)
+library(EnhancedVolcano)
 
+# Statistical analysis and enrichment
+library(Tweedieverse)
+
+# Pathway and Gene Set Analysis
 library(clusterProfiler)
 library(org.EcK12.eg.db)
 library(enrichplot)
 library(DOSE)
+
 ```
 
 ```{r setup, include=FALSE}
 library(knitr)
-opts_knit$set(root.dir="~/DrugResistant-Vs-Susceptible-Ecoli-Transcriptomics-main/") # file paths are relative to the root of the project directory
+opts_knit$set(root.dir="~/Projects/DrugResistant-Vs-Susceptible-Ecoli-Transcriptomics") # file paths are relative to the root of the project directory
 ```
 
 ## Data
@@ -372,7 +391,8 @@ shared_genes <- Reduce(intersect, significant_genes)
 shared_genes
 ```
 
-```{top_shared_genes <- top_genes %>%}
+```{r}
+top_shared_genes <- top_genes %>%
   filter(feature %in% c("yjiY","hsdR","yagG","ydbD","yagF"))
 ```
 
@@ -445,6 +465,10 @@ for (ab in antibiotics) {
 head(gene_list_by_antibiotic)
 ```
 
+```{r}
+
+```
+
 ### KEGG Enrichment
 
 ```{r}
@@ -464,16 +488,19 @@ kegg_enrichment@compareClusterResult$Description <- gsub(" - Escherichia coli K-
 ```
 
 ```{r}
+write.csv(kegg_enrichment@compareClusterResult, file.path('analysis/summary/kegg_results.csv'), row.names = FALSE)
+```
+
+```{r}
 dot_plot <- dotplot(kegg_enrichment, x = "Cluster",
         color = "p.adjust",
         showCategory = 10,
-        split = "category",
         font.size = 8,
         title = "",
         by = "geneRatio",
         size = NULL,
         includeAll = TRUE,
-        label_format = 40)
+        label_format = 40) 
 
 ggsave(
   filename = "analysis/summary/dot_plot.png",
@@ -482,58 +509,22 @@ ggsave(
 )
 ```
 
-### GO Enrichment
+### **Visualize enriched KEGG pathways**
+
+Identifying the relevant pathway and getting the network for the pathway via the ID from kegg_results
 
 ```{r}
-go_enrichment <- compareCluster(gene = gene_list_by_antibiotic,
-                                fun = 'enrichGO',
-                                OrgDb = org.EcK12.eg.db,
-                                keyType = "ENTREZID",
-                                #universe = rownames(geo_data),
-                                pvalueCutoff = 0.25,
-                                qvalueCutoff = 0.25,
-                                pAdjustMethod="BH")
-
+kegg_results <- kegg_enrichment@compareClusterResult
 ```
 
 ```{r}
-go_enrichment <- go_enrichment %>% 
-  simplify()
+filtered_pathways <- unique(kegg_results %>% dplyr::select(ID,category,subcategory,Description))
 ```
 
 ```{r}
-GOresultsTable <- go_enrichment@compareClusterResult
+filtered_pathways
 ```
 
 ```{r}
-go_dot_plot <- dotplot(go_enrichment, x = "Cluster",
-        color = "p.adjust",
-        showCategory = 10,
-        split = "category",
-        font.size = 8,
-        title = "",
-        by = "geneRatio",
-        size = NULL,
-        includeAll = TRUE,
-        label_format = 40)
-ggsave(
-  filename = "analysis/summary/go_dot_plot.png",
-  plot = go_dot_plot,
-  width = 6, height = 8, dpi = 300
-)
-```
-
-```{r}
-GOnetwork_plot <- cnetplot(go_enrichment,
-                           # showCategory=10,
-                           
-                           circular = TRUE)
-GOnetwork_plot
-
-# cex_label_gene = 0.02,
-#            cex_label_category = 0.01,
-#            layout = igraph::layout_with_kk,
-#            size_edge = 0.5,
-#            node_label = "all",
-#            showCategory = nrow(GOresultsTable)
+browseKEGG(kegg_results, 'eco00750')
 ```

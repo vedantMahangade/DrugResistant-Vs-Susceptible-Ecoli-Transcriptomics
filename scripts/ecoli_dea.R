@@ -1,6 +1,7 @@
 library(ggplot2)
 library(pheatmap)
 library(tidyverse)
+library(ComplexUpset)
 
 
 # Set working directory
@@ -107,7 +108,7 @@ create_volcano_plot <- function(tweedie_results, title_prefix, path) {
                                   y = 'pval',
                                   xlim = c(-1.5, 1.5),
                                   ylim = c(0, 7),
-                                  pCutoff = 0.25,
+                                  pCutoff = 0.05,
                                   FCcutoff = 0.25,
                                   pointSize = 3.0,
                                   labSize = 3.0)
@@ -308,7 +309,7 @@ binary_long <- binary_df %>%
     values_fill = FALSE
   )
 
-library(ComplexUpset)
+
 # Plot the UpSet plot
 upset_plot <- upset(
   binary_long,

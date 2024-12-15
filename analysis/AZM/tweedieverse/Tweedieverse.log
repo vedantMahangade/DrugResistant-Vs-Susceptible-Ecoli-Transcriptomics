@@ -1,0 +1,231 @@
+2024-12-15 18:04:22.248856 INFO::Writing function arguments to log file
+2024-12-15 18:04:22.249539 DEBUG::Function arguments
+2024-12-15 18:04:22.249708 DEBUG::Output folder: analysis/AZM/tweedieverse/
+2024-12-15 18:04:22.249848 DEBUG::Abundance threshold: 0.000000
+2024-12-15 18:04:22.249995 DEBUG::Prevalence threshold: 0.100000
+2024-12-15 18:04:22.25013 DEBUG::Variance threshold: 0.000000
+2024-12-15 18:04:22.250272 DEBUG::Base model: CPLM
+2024-12-15 18:04:22.250409 DEBUG::Link function: log
+2024-12-15 18:04:22.250547 DEBUG::Fixed effects: ResistanceType
+2024-12-15 18:04:22.250676 DEBUG::Random effects:
+2024-12-15 18:04:22.250817 DEBUG::ZSCP cutoff: 0.300000
+2024-12-15 18:04:22.250946 DEBUG::ZACP criteria: BIC
+2024-12-15 18:04:22.251083 DEBUG::Offset adjustment: TRUE
+2024-12-15 18:04:22.251223 DEBUG::Scale factor:
+2024-12-15 18:04:22.251343 DEBUG::Max significance: 0.050000
+2024-12-15 18:04:22.251489 DEBUG::Correction method: BH
+2024-12-15 18:04:22.251632 DEBUG::Standardize: TRUE
+2024-12-15 18:04:22.251762 DEBUG::Cores: 1
+2024-12-15 18:04:22.2519 DEBUG::Optimization routine: nlminb
+2024-12-15 18:04:22.252031 INFO::Determining format of input files
+2024-12-15 18:04:22.252497 INFO::Input format is data samples as columns and metadata samples as rows
+2024-12-15 18:04:22.277643 DEBUG::linked data so samples are rows
+2024-12-15 18:04:22.277902 DEBUG::The following samples were found to have metadata but no features. They will be removed. GSM1436500,GSM1436501,GSM1436502,GSM1436503,GSM1436504,GSM1436505,GSM1436506,GSM1436507,GSM1436508,GSM1436509,GSM1436510,GSM1436511,GSM1436512,GSM1436513,GSM1436514,GSM1436515,GSM1436516,GSM1436517,GSM1436518,GSM1436519,GSM1436520,GSM1436521,GSM1436522,GSM1436523,GSM1436528,GSM1436529,GSM1436530,GSM1436531,GSM1436532,GSM1436533,GSM1436534,GSM1436535,GSM1436536,GSM1436537,GSM1436538,GSM1436539
+2024-12-15 18:04:22.278086 DEBUG::A total of 6 samples were found in both the data and metadata
+2024-12-15 18:04:22.278219 DEBUG::Reordering data/metadata to use same sample ordering
+2024-12-15 18:04:22.278964 INFO::Filter data based on min abundance and min prevalence
+2024-12-15 18:04:22.279415 INFO::Total samples in data: 6
+2024-12-15 18:04:22.279824 INFO::Min samples required with min abundance for a feature not to be filtered: 0.600000
+2024-12-15 18:04:22.281019 INFO::Total filtered features with prevalence-abundance filtering: 0
+2024-12-15 18:04:22.281455 INFO::Filtered feature names:
+2024-12-15 18:04:22.283042 INFO::Total filtered features with variance filtering: 0
+2024-12-15 18:04:22.283454 INFO::Filtered feature names:
+2024-12-15 18:04:22.284878 INFO::Excluded metadata with entropy less or equal to 0:
+2024-12-15 18:04:22.285388 INFO::Formula for fixed effects: expr ~  ResistanceType
+2024-12-15 18:04:22.28583 INFO::Applying z-score to standardize continuous metadata
+2024-12-15 18:04:22.288495 INFO::Running selected analysis method: CPLM
+2024-12-15 18:04:22.289529 INFO::Fitting model to feature number 1, acrB
+2024-12-15 18:04:22.313923 INFO::Fitting model to feature number 2, acrR
+2024-12-15 18:04:22.331206 INFO::Fitting model to feature number 3, acs
+2024-12-15 18:04:22.351957 INFO::Fitting model to feature number 4, actP
+2024-12-15 18:04:22.372849 INFO::Fitting model to feature number 5, argA
+2024-12-15 18:04:22.389367 INFO::Fitting model to feature number 6, argC
+2024-12-15 18:04:22.408251 INFO::Fitting model to feature number 7, argF
+2024-12-15 18:04:22.43115 INFO::Fitting model to feature number 8, argI
+2024-12-15 18:04:22.45137 INFO::Fitting model to feature number 9, bdm
+2024-12-15 18:04:22.477763 INFO::Fitting model to feature number 10, cirA
+2024-12-15 18:04:22.506649 INFO::Fitting model to feature number 11, cspA
+2024-12-15 18:04:22.523285 INFO::Fitting model to feature number 12, cspC
+2024-12-15 18:04:22.542725 INFO::Fitting model to feature number 13, csrC
+2024-12-15 18:04:22.567114 INFO::Fitting model to feature number 14, dkgB
+2024-12-15 18:04:22.586232 INFO::Fitting model to feature number 15, dppA
+2024-12-15 18:04:23.184693 INFO::Fitting model to feature number 16, dppC
+2024-12-15 18:04:23.204815 INFO::Fitting model to feature number 17, dppD
+2024-12-15 18:04:23.228483 INFO::Fitting model to feature number 18, dppF
+2024-12-15 18:04:23.248395 INFO::Fitting model to feature number 19, ecnB
+2024-12-15 18:04:23.27902 INFO::Fitting model to feature number 20, entB
+2024-12-15 18:04:23.300998 INFO::Fitting model to feature number 21, entC
+2024-12-15 18:04:23.339995 INFO::Fitting model to feature number 22, fepA
+2024-12-15 18:04:23.363949 INFO::Fitting model to feature number 23, gcd
+2024-12-15 18:04:23.384864 INFO::Fitting model to feature number 24, glgS
+2024-12-15 18:04:23.404737 INFO::Fitting model to feature number 25, glpQ
+2024-12-15 18:04:23.425796 INFO::Fitting model to feature number 26, glpT
+2024-12-15 18:04:23.443316 INFO::Fitting model to feature number 27, gltD
+2024-12-15 18:04:23.456623 INFO::Fitting model to feature number 28, gltF
+2024-12-15 18:04:23.472662 INFO::Fitting model to feature number 29, gntT
+2024-12-15 18:04:23.493107 INFO::Fitting model to feature number 30, hdeB
+2024-12-15 18:04:23.512526 INFO::Fitting model to feature number 31, hemB
+2024-12-15 18:04:23.533164 INFO::Fitting model to feature number 32, hisA
+2024-12-15 18:04:23.550892 INFO::Fitting model to feature number 33, hisB
+2024-12-15 18:04:23.579421 INFO::Fitting model to feature number 34, hisC
+2024-12-15 18:04:23.598168 INFO::Fitting model to feature number 35, hisD
+2024-12-15 18:04:23.616756 INFO::Fitting model to feature number 36, hisG
+2024-12-15 18:04:23.675262 INFO::Fitting model to feature number 37, hsdR
+2024-12-15 18:04:23.699841 INFO::Fitting model to feature number 38, hybA
+2024-12-15 18:04:23.723761 INFO::Fitting model to feature number 39, hybB
+2024-12-15 18:04:23.747554 INFO::Fitting model to feature number 40, hybC
+2024-12-15 18:04:23.770844 INFO::Fitting model to feature number 41, hybO
+2024-12-15 18:04:23.961077 INFO::Fitting model to feature number 42, idi
+2024-12-15 18:04:23.981255 INFO::Fitting model to feature number 43, inaA
+2024-12-15 18:04:23.998875 INFO::Fitting model to feature number 44, IS092
+2024-12-15 18:04:24.034294 INFO::Fitting model to feature number 45, lamB
+2024-12-15 18:04:24.07007 INFO::Fitting model to feature number 46, lpxL
+2024-12-15 18:04:24.09375 INFO::Fitting model to feature number 47, lysQ
+2024-12-15 18:04:24.109607 INFO::Fitting model to feature number 48, lysT
+2024-12-15 18:04:24.124449 INFO::Fitting model to feature number 49, lysV
+2024-12-15 18:04:24.138803 INFO::Fitting model to feature number 50, lysW
+2024-12-15 18:04:24.155111 INFO::Fitting model to feature number 51, lysY
+2024-12-15 18:04:24.17015 INFO::Fitting model to feature number 52, lysZ
+2024-12-15 18:04:24.184014 INFO::Fitting model to feature number 53, malE
+2024-12-15 18:04:24.205956 INFO::Fitting model to feature number 54, malM
+2024-12-15 18:04:24.222071 INFO::Fitting model to feature number 55, malZ
+2024-12-15 18:04:24.246237 INFO::Fitting model to feature number 56, marA
+2024-12-15 18:04:24.262531 INFO::Fitting model to feature number 57, marB
+2024-12-15 18:04:24.285163 INFO::Fitting model to feature number 58, marR
+2024-12-15 18:04:24.302983 INFO::Fitting model to feature number 59, metI
+2024-12-15 18:04:24.315879 INFO::Fitting model to feature number 60, metQ
+2024-12-15 18:04:24.335302 INFO::Fitting model to feature number 61, mglA
+2024-12-15 18:04:24.35149 INFO::Fitting model to feature number 62, mgtA
+2024-12-15 18:04:24.36952 INFO::Fitting model to feature number 63, mlrA
+2024-12-15 18:04:24.389952 INFO::Fitting model to feature number 64, mqo
+2024-12-15 18:04:24.406787 INFO::Fitting model to feature number 65, nfsA
+2024-12-15 18:04:24.425996 INFO::Fitting model to feature number 66, ompF
+2024-12-15 18:04:24.443232 INFO::Fitting model to feature number 67, osmC
+2024-12-15 18:04:24.490959 INFO::Fitting model to feature number 68, phnB
+2024-12-15 18:04:24.508802 INFO::Fitting model to feature number 69, phoH
+2024-12-15 18:04:24.529783 INFO::Fitting model to feature number 70, phoU
+2024-12-15 18:04:24.549307 INFO::Fitting model to feature number 71, poxB
+2024-12-15 18:04:24.568775 INFO::Fitting model to feature number 72, proK
+2024-12-15 18:04:24.584698 INFO::Fitting model to feature number 73, proV
+2024-12-15 18:04:24.597259 INFO::Fitting model to feature number 74, proW
+2024-12-15 18:04:24.610373 INFO::Fitting model to feature number 75, proX
+2024-12-15 18:04:24.627712 INFO::Fitting model to feature number 76, psiF
+2024-12-15 18:04:24.696618 INFO::Fitting model to feature number 77, pstA
+2024-12-15 18:04:24.724406 INFO::Fitting model to feature number 78, pstB
+2024-12-15 18:04:24.749739 INFO::Fitting model to feature number 79, pstC
+2024-12-15 18:04:24.988245 INFO::Fitting model to feature number 80, pstS
+2024-12-15 18:04:25.010418 INFO::Fitting model to feature number 81, rcsA
+2024-12-15 18:04:25.031278 INFO::Fitting model to feature number 82, rimK
+2024-12-15 18:04:25.054077 INFO::Fitting model to feature number 83, rmf
+2024-12-15 18:04:25.083186 INFO::Fitting model to feature number 84, rpoS
+2024-12-15 18:04:25.11094 INFO::Fitting model to feature number 85, rydB
+2024-12-15 18:04:25.13208 INFO::Fitting model to feature number 86, sgrS
+2024-12-15 18:04:25.151625 INFO::Fitting model to feature number 87, sohA
+2024-12-15 18:04:25.168608 INFO::Fitting model to feature number 88, spf
+2024-12-15 18:04:25.189849 INFO::Fitting model to feature number 89, sra
+2024-12-15 18:04:25.220774 INFO::Fitting model to feature number 90, tyrP
+2024-12-15 18:04:25.249195 INFO::Fitting model to feature number 91, ugd
+2024-12-15 18:04:25.262986 INFO::Fitting model to feature number 92, upp
+2024-12-15 18:04:25.283313 INFO::Fitting model to feature number 93, valT
+2024-12-15 18:04:25.309103 INFO::Fitting model to feature number 94, valU
+2024-12-15 18:04:25.338544 INFO::Fitting model to feature number 95, valW
+2024-12-15 18:04:25.369653 INFO::Fitting model to feature number 96, valX
+2024-12-15 18:04:25.414908 INFO::Fitting model to feature number 97, valY
+2024-12-15 18:04:25.44821 INFO::Fitting model to feature number 98, valZ
+2024-12-15 18:04:25.482378 INFO::Fitting model to feature number 99, yabI
+2024-12-15 18:04:25.522156 INFO::Fitting model to feature number 100, yagF
+2024-12-15 18:04:25.544092 INFO::Fitting model to feature number 101, yagG
+2024-12-15 18:04:25.56009 INFO::Fitting model to feature number 102, yahA
+2024-12-15 18:04:25.578084 INFO::Fitting model to feature number 103, yahO
+2024-12-15 18:04:25.599241 INFO::Fitting model to feature number 104, ybaY
+2024-12-15 18:04:25.63985 INFO::Fitting model to feature number 105, ybcI
+2024-12-15 18:04:25.654191 INFO::Fitting model to feature number 106, ybeL
+2024-12-15 18:04:25.720051 INFO::Fitting model to feature number 107, ybgH
+2024-12-15 18:04:25.74263 INFO::Fitting model to feature number 108, ybjC
+2024-12-15 18:04:25.768034 INFO::Fitting model to feature number 109, ycaC
+2024-12-15 18:04:25.791073 INFO::Fitting model to feature number 110, ycbZ
+2024-12-15 18:04:25.812783 INFO::Fitting model to feature number 111, ycgB
+2024-12-15 18:04:25.841757 INFO::Fitting model to feature number 112, ycgK
+2024-12-15 18:04:26.038181 INFO::Fitting model to feature number 113, yciF
+2024-12-15 18:04:26.061073 INFO::Fitting model to feature number 114, yciG
+2024-12-15 18:04:26.085499 INFO::Fitting model to feature number 115, ydbD
+2024-12-15 18:04:26.100922 INFO::Fitting model to feature number 116, ydeI
+2024-12-15 18:04:26.1435 INFO::Fitting model to feature number 117, yeaQ
+2024-12-15 18:04:26.169397 INFO::Fitting model to feature number 118, yedP
+2024-12-15 18:04:26.195082 INFO::Fitting model to feature number 119, yehE
+2024-12-15 18:04:26.216257 INFO::Fitting model to feature number 120, yeiR
+2024-12-15 18:04:26.235015 INFO::Fitting model to feature number 121, yejG
+2024-12-15 18:04:26.256998 INFO::Fitting model to feature number 122, yfdC
+2024-12-15 18:04:26.287815 INFO::Fitting model to feature number 123, yghA
+2024-12-15 18:04:26.311837 INFO::Fitting model to feature number 124, yghW
+2024-12-15 18:04:26.329764 INFO::Fitting model to feature number 125, ygjG
+2024-12-15 18:04:26.347316 INFO::Fitting model to feature number 126, yhaV
+2024-12-15 18:04:26.37102 INFO::Fitting model to feature number 127, yhbW
+2024-12-15 18:04:26.392374 INFO::Fitting model to feature number 128, yhcN
+2024-12-15 18:04:26.407106 INFO::Fitting model to feature number 129, yhcO
+2024-12-15 18:04:26.42768 INFO::Fitting model to feature number 130, yhjG
+2024-12-15 18:04:26.447435 INFO::Fitting model to feature number 131, yiaB
+2024-12-15 18:04:26.461926 INFO::Fitting model to feature number 132, yiaG
+2024-12-15 18:04:26.483608 INFO::Fitting model to feature number 133, yicM
+2024-12-15 18:04:26.503674 INFO::Fitting model to feature number 134, yjbE
+2024-12-15 18:04:26.519173 INFO::Fitting model to feature number 135, yjbF
+2024-12-15 18:04:26.532053 INFO::Fitting model to feature number 136, yjbG
+2024-12-15 18:04:26.544081 INFO::Fitting model to feature number 137, yjbH
+2024-12-15 18:04:26.555705 INFO::Fitting model to feature number 138, yjcH
+2024-12-15 18:04:26.576163 INFO::Fitting model to feature number 139, yjdI
+2024-12-15 18:04:26.602168 INFO::Fitting model to feature number 140, yjdJ
+2024-12-15 18:04:26.621871 INFO::Fitting model to feature number 141, yjiY
+2024-12-15 18:04:26.66337 INFO::Fitting model to feature number 142, yjjZ
+2024-12-15 18:04:26.726193 INFO::Fitting model to feature number 143, ymdF
+2024-12-15 18:04:26.74977 INFO::Fitting model to feature number 144, yncC
+2024-12-15 18:04:26.775776 INFO::Fitting model to feature number 145, yncD
+2024-12-15 18:04:26.797237 INFO::Fitting model to feature number 146, yncG
+2024-12-15 18:04:27.002637 INFO::Fitting model to feature number 147, ynfM
+2024-12-15 18:04:27.028055 INFO::Fitting model to feature number 148, yoaC
+2024-12-15 18:04:27.075536 INFO::Fitting model to feature number 149, yodB
+2024-12-15 18:04:27.097412 INFO::Fitting model to feature number 150, yodD
+2024-12-15 18:04:27.12271 INFO::Fitting model to feature number 151, yrbL
+2024-12-15 18:04:27.145669 INFO::Fitting model to feature number 152, ysaB
+2024-12-15 18:04:27.219004 INFO::Counting prevalence for each feature
+2024-12-15 18:04:27.223833 INFO::Writing all results to file (ordered by increasing q-values): analysis/AZM/tweedieverse//all_results.tsv
+2024-12-15 18:04:27.226062 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.050000 ) to file (ordered by increasing q-values): analysis/AZM/tweedieverse//significant_results.tsv
+2024-12-15 18:04:27.226827 INFO::Writing Tweedie inxed plot to file: analysis/AZM/tweedieverse/
+2024-12-15 18:04:27.227263 INFO::Plotting tweedie.index  colored by metadata
+2024-12-15 18:04:27.227665 INFO::Plotting tweedie.index
+2024-12-15 18:04:27.335729 INFO::Writing association plots (one for each significant association) to output folder: analysis/AZM/tweedieverse/
+2024-12-15 18:04:27.341509 INFO::Plotting associations from most to least significant, grouped by metadata
+2024-12-15 18:04:27.34215 INFO::Plotting data for metadata number 1, ResistanceType
+2024-12-15 18:04:27.342987 INFO::Creating boxplot for categorical data, ResistanceType vs hsdR
+2024-12-15 18:04:27.40088 INFO::Creating boxplot for categorical data, ResistanceType vs yjiY
+2024-12-15 18:04:27.45493 INFO::Creating boxplot for categorical data, ResistanceType vs yagF
+2024-12-15 18:04:27.520986 INFO::Creating boxplot for categorical data, ResistanceType vs yagG
+2024-12-15 18:04:27.574627 INFO::Creating boxplot for categorical data, ResistanceType vs ybaY
+2024-12-15 18:04:27.62974 INFO::Creating boxplot for categorical data, ResistanceType vs osmC
+2024-12-15 18:04:27.684923 INFO::Creating boxplot for categorical data, ResistanceType vs yoaC
+2024-12-15 18:04:28.144736 INFO::Creating boxplot for categorical data, ResistanceType vs sra
+2024-12-15 18:04:28.207778 INFO::Creating boxplot for categorical data, ResistanceType vs ydbD
+2024-12-15 18:04:28.268944 INFO::Creating boxplot for categorical data, ResistanceType vs yodD
+2024-12-15 18:04:28.326919 INFO::Creating boxplot for categorical data, ResistanceType vs ecnB
+2024-12-15 18:04:28.389457 INFO::Creating boxplot for categorical data, ResistanceType vs yncG
+2024-12-15 18:04:28.496614 INFO::Creating boxplot for categorical data, ResistanceType vs ysaB
+2024-12-15 18:04:28.72493 INFO::Creating boxplot for categorical data, ResistanceType vs yjbH
+2024-12-15 18:04:28.787967 INFO::Creating boxplot for categorical data, ResistanceType vs yjbF
+2024-12-15 18:04:28.850449 INFO::Creating boxplot for categorical data, ResistanceType vs yncC
+2024-12-15 18:04:28.921491 INFO::Creating boxplot for categorical data, ResistanceType vs rpoS
+2024-12-15 18:04:28.978925 INFO::Creating boxplot for categorical data, ResistanceType vs yeaQ
+2024-12-15 18:04:29.033243 INFO::Creating boxplot for categorical data, ResistanceType vs argF
+2024-12-15 18:04:29.087977 INFO::Creating boxplot for categorical data, ResistanceType vs yiaB
+2024-12-15 18:04:29.152215 INFO::Creating boxplot for categorical data, ResistanceType vs malZ
+2024-12-15 18:04:29.20649 INFO::Creating boxplot for categorical data, ResistanceType vs yhcO
+2024-12-15 18:04:29.260916 INFO::Creating boxplot for categorical data, ResistanceType vs yjdJ
+2024-12-15 18:04:29.3154 INFO::Creating boxplot for categorical data, ResistanceType vs yjjZ
+2024-12-15 18:04:29.379645 INFO::Creating boxplot for categorical data, ResistanceType vs yedP
+2024-12-15 18:04:29.433941 INFO::Creating boxplot for categorical data, ResistanceType vs yhjG
+2024-12-15 18:04:29.532513 INFO::Creating boxplot for categorical data, ResistanceType vs yiaG
+2024-12-15 18:04:29.75634 INFO::Creating boxplot for categorical data, ResistanceType vs yahO
+2024-12-15 18:04:29.837955 INFO::Creating boxplot for categorical data, ResistanceType vs ybcI
+2024-12-15 18:04:29.899129 INFO::Creating boxplot for categorical data, ResistanceType vs phnB
+2024-12-15 18:04:29.960878 INFO::Creating boxplot for categorical data, ResistanceType vs yjdI
+2024-12-15 18:04:30.018101 INFO::Creating boxplot for categorical data, ResistanceType vs yjbG
+2024-12-15 18:04:30.081087 INFO::Creating boxplot for categorical data, ResistanceType vs ycgB
+2024-12-15 18:04:30.135076 INFO::Creating boxplot for categorical data, ResistanceType vs yabI
