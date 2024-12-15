@@ -1,2 +1,6 @@
 .DS_Store
 .Rproj.user
+discard/
+.Rhistory
+.RData
+venn*
