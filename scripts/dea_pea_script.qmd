@@ -430,5 +430,110 @@ ggsave(
 ## Pathway Enrichment Analysis
 
 ```{r}
+antibiotics <- unique(top_genes$Antibiotic)
 
+gene_list_by_antibiotic <- list()
+for (ab in antibiotics) {
+  genes_condition <- top_genes %>%
+    filter(Antibiotic == ab) %>%
+    pull(feature)
+  
+  gene_ids <- bitr(genes_condition,  fromType = "SYMBOL", toType = "ENTREZID", OrgDb = org.EcK12.eg.db)
+  gene_list_by_antibiotic[[ab]] <- gene_ids$ENTREZID
+}
+
+head(gene_list_by_antibiotic)
+```
+
+### KEGG Enrichment
+
+```{r}
+kegg_enrichment <- compareCluster(gene = gene_list_by_antibiotic,
+                                  fun = 'enrichKEGG',
+                                  organism = "eco",
+                                  pvalueCutoff = 0.25,
+                                  qvalueCutoff = 0.25,
+                                  keyType = "ncbi-geneid", 
+                                  pAdjustMethod="BH")
+```
+
+```{r}
+kegg_enrichment@compareClusterResult$Description <- gsub(" - Escherichia coli K-12 MG1655", 
+                                                          "",
+                                                        kegg_enrichment@compareClusterResult$Description)
+```
+
+```{r}
+dot_plot <- dotplot(kegg_enrichment, x = "Cluster",
+        color = "p.adjust",
+        showCategory = 10,
+        split = "category",
+        font.size = 8,
+        title = "",
+        by = "geneRatio",
+        size = NULL,
+        includeAll = TRUE,
+        label_format = 40)
+
+ggsave(
+  filename = "analysis/summary/dot_plot.png",
+  plot = dot_plot,
+  width = 6, height = 8, dpi = 300
+)
+```
+
+### GO Enrichment
+
+```{r}
+go_enrichment <- compareCluster(gene = gene_list_by_antibiotic,
+                                fun = 'enrichGO',
+                                OrgDb = org.EcK12.eg.db,
+                                keyType = "ENTREZID",
+                                #universe = rownames(geo_data),
+                                pvalueCutoff = 0.25,
+                                qvalueCutoff = 0.25,
+                                pAdjustMethod="BH")
+
+```
+
+```{r}
+go_enrichment <- go_enrichment %>% 
+  simplify()
+```
+
+```{r}
+GOresultsTable <- go_enrichment@compareClusterResult
+```
+
+```{r}
+go_dot_plot <- dotplot(go_enrichment, x = "Cluster",
+        color = "p.adjust",
+        showCategory = 10,
+        split = "category",
+        font.size = 8,
+        title = "",
+        by = "geneRatio",
+        size = NULL,
+        includeAll = TRUE,
+        label_format = 40)
+ggsave(
+  filename = "analysis/summary/go_dot_plot.png",
+  plot = go_dot_plot,
+  width = 6, height = 8, dpi = 300
+)
+```
+
+```{r}
+GOnetwork_plot <- cnetplot(go_enrichment,
+                           # showCategory=10,
+                           
+                           circular = TRUE)
+GOnetwork_plot
+
+# cex_label_gene = 0.02,
+#            cex_label_category = 0.01,
+#            layout = igraph::layout_with_kk,
+#            size_edge = 0.5,
+#            node_label = "all",
+#            showCategory = nrow(GOresultsTable)
 ```
